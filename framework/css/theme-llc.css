@@ -80,6 +80,15 @@ code {
   border-radius: 4px;
   padding: 0 6px; }
 
+figure {
+  text-align: center;
+  margin: 0 auto;
+}
+
+figcaption {
+  font-size: 0.8em;
+}
+
 /* Base styles for slides
 --------------------------*/
 .slide {
