@@ -80,6 +80,15 @@ code {
   border-radius: 4px;
   padding: 0 6px; }
 
+figure {
+  text-align: center;
+  margin: 0 auto;
+}
+
+figcaption {
+  font-size: 0.8em;
+}
+
 /* Base styles for slides
 --------------------------*/
 .slide {
@@ -218,8 +227,9 @@ e.g.
     color: #ffffff; }
   .intro .instructor-img {
     border-radius: 50%;
-    width: 114px;
-    height: 105px;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
     float: left;
     margin-right: 20px; }
   .intro .instructor-info {
@@ -252,14 +262,16 @@ e.g.
   padding-right: 10px; }
 .last .heading-bg {
   margin-top: 40px; }
-  .last .heading-bg span {
-    background: rgba(177, 9, 170, 0.8);
-    color: #ffffff;
-    border-radius: 5px;
-    padding: 0 10px 0 6px; }
+.last .heading-bg span {
+  background: rgba(177, 9, 170, 0.8);
+  color: #ffffff;
+  border-radius: 5px;
+  padding: 0 10px 0 6px; }
 .last .instructor-img {
   border-radius: 50%;
   width: 100px;
+  height: 100px;
+  object-fit: cover;
   float: left;
   margin-right: 20px; }
 .last h3 {

@@ -1,6 +1,6 @@
 # Building a web store with Shopify and Liquid
 
-An introductory workshop to Shopify and customizing themes with Liquid.  Made for [Ladies Learning Code](ladieslearningcode.com).
+An introductory workshop to Shopify and customizing themes with Liquid.  Made for [Ladies Learning Code](http://ladieslearningcode.com).
 
 * [Workshop information](#workshop-information)
   * [Building a web store with Shopify and Liquid](#building-a-web-store-with-Shopify-and-Liquid)
