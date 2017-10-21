@@ -17,7 +17,7 @@ Below is a suggested write up for posting the workshop.
 
 You've been thinking about ecommerce and wondering how you can use your skills to help people (or you!) sell cool stuff online.  In this workshop, we will show you how to customize online stores on the Shopify platform and give you the tools needed to make a business out of it.
 
-Shopify's ecommerce solution already powers over 325,000 stores across the globe. Knowing how to customize themes on Shopify gives web designers/developers a desirable set of skills that they can use to grow their business. 
+Shopify's ecommerce solution already powers over 500,000 stores across the globe. Knowing how to customize themes on Shopify gives web designers/developers a desirable set of skills that they can use to grow their business. 
 
 Do you want more control over how you show collections on the homepage? Need to show a coupon code for any product that is part of this season's Winter Solstice collection?  This workshop will teach you all you need to know to make that happen.
 
@@ -37,12 +37,12 @@ You'll also need a Partner account to set up a development Shopify store to work
 
 ## Instructor information
 
-A the root directory of this repo are some assets for participants.  Be sure to point them
+In the root directory of this repo are some assets for participants.  Be sure to point them
 out at the beginning of the course.
 
 * `index.html` is the slide deck.  It runs in the browser, so it requires no proprietary software (PC and Macs will be a-okay 😅)
 * `Debut - Ladies Learning Code.zip` is the theme to be used in the workshop.  This guarantees that the slides will reflect the theme contents.  Fetching the Debut theme from Shopify's Theme store is not recommended for instruction.
-* The is an `images` folder that has assets for participants to use in their store. i.e. Store logos, carousel images, hero images.
+* There is an `images` folder that has assets for participants to use in their store. i.e. Store logos, carousel images, hero images.
 * `llc-products.csv` has over 100 unique products that participants are to upload to their store.  More details can be found in the workshop slides.
 
 ### Ladies Learning Code slide deck template
