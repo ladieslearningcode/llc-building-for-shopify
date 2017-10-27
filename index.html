@@ -969,10 +969,11 @@ Debut | Built with Shopify Slate
                 <p>Filters <b>modify</b> whatever they are attached to.</p>
                 <h3>Example</h3>
                 <pre><code class="hljs xml">
-{{ product.property | filter }}
+// format: {{ LIQUID_OBJECT.PROPERTY_NAME | FILTER_NAME }}
+{{ product.handle | append: '.png' }}
                 </code></pre>
 
-                <p><b>Pro tip</b>: That line is called a "pipe".</p>
+                <p><b>Pro tip</b>: This line | is called a "pipe".</p>
             </div>
 
             <p class="presenter-notes">
@@ -1406,13 +1407,11 @@ Capt. Vinay
                 <h3>Pseudo code</h3>
                 <pre><code class="hljs xml">
 {% if collection_image_exists %}
-
-    our code that shows the hero image
-
+    Show the hero image
 {% endif %}
                 </pre></code>
 
-                <p><b>Pro tip</b>: Pseudo code is a great way to work things out on paper first.</p>
+                <p><b>Pro tip</b>: Pseudo code is a great way to work things out on paper first. <b>This will not work</b> if you paste it into your editor!</p>
             </div>
 
         </section>
@@ -1422,19 +1421,19 @@ Capt. Vinay
           <p>Only does something if a <b>condition</b> is true</p>
           <pre><code class="hljs xml">
 {% if <span class="keyword">true</span> %}
-    do this...
+    Do this...
 {% endif %}
                 </pre></code>
 
         <div class="delayed">
           <p>Have different results when different <b>conditions</b> are met</p>
           <pre><code class="hljs xml">
-{% if <span class="keyword">primary condition</span> %}
-    do this.
-{% elsif <span class="keyword">secondary condition</span> %}
-    do this.
+{% if <span class="keyword">primary condition is true</span> %}
+    Do this.
+{% elsif <span class="keyword">secondary condition is true</span> %}
+    Do this.
 {% else %}
-    when all else fails...
+    When all else fails, do this.
 {% endif %}
                 </pre></code>
         </div>
@@ -1458,7 +1457,7 @@ Capt. Vinay
               <p>Answer: <code>{% if collection.image %}</code></p>
                 <pre><code class="hljs xml">
 {% if collection.image %}
-    our code to show the hero image
+    Show the hero image
 {% endif %}
                 </pre></code>
             </div>
@@ -1476,7 +1475,7 @@ Capt. Vinay
             <p>We could have also have used <a href="https://docs.shopify.com/themes/liquid-documentation/basics/operators#basic-operators" alt="basic operators">a logic operator</a> in our condition.</p>
                 <pre><code class="hljs">
 {% if collection.image.src != blank %}
-    Show hero image
+    Show the hero image
 {% endif %}
                 </pre></code>
 
@@ -1535,7 +1534,7 @@ Capt. Vinay
 {% for each collection in collections %}
 
     {% if title is 'Household' %}
-      Show the discount code.
+      Show the discount code
     {% endif %}
 
 {% endfor %}
@@ -1906,7 +1905,7 @@ Capt. Vinay
               <pre><code>
 {% if product.tags contains 'sustainable' %}
   &lt;p&gt;Sustainable product&lt;/p&gt;
-{% endif%}
+{% endif %}
               </code></pre>
             </div>
             <br>
@@ -1918,7 +1917,7 @@ Capt. Vinay
   &lt;p&gt;
     &lt;img src="{{ 'icon-leaf.png' | asset_url }}" /&gt; Sustainable product
   &lt;/p&gt;
-{% endif%}
+{% endif %}
               </code></pre>
             </div>
         </section>
