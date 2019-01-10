@@ -87,12 +87,9 @@
             <br>
             <h2 class="delayed">Commerce application</h2>
             <br>
-            <h2 class="delayed">Over 500,000 merchants in 150+ countries</h2>
+            <h2 class="delayed">Over 600,000 merchants in 150+ countries</h2>
             <br>
             <h2 class="delayed">Canadian :)</h2>
-        </section>
-
-        <section class="slide local-shops bg--image">
         </section>
 
         <section class="slide big-brands bg--image">
@@ -113,7 +110,6 @@
                     <li>Introduction to Liquid Text</li>
                     <li>Modify template files</li>
                     <li>Program smarter page designs</li>
-                    <li>Do some shopping</li>
                 </ul>
             </div>
 
@@ -351,12 +347,7 @@
 
           <p>Feel free to use the description of this workshop.</p>
           <pre><code class="hljs html">
-In this workshop, we'll discuss how you can use Liquid, Shopify's nifty templating language, to pull information from your store and alter the webpage layout. You can also open a free Partner account, which you can use during and after the workshop to work on Shopify projects of your own.
-
-We'll start with an overview of Shopify's theme environment and best practices in making customizations. From there you'll learn how to make alternative templates for your store's products and pages to provide more variety in your store's look.
-
-By the end of the day, your will have the foundational skills to transform an "out-of-the box template" into a custom site that reflects your design and how you want to run your store.
-
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis semper congue lacus vitae elementum. Quisque tempus dui quis lorem ullamcorper, iaculis interdum quam vestibulum. Nunc rhoncus eros feugiat libero tincidunt, non imperdiet lacus venenatis. Nunc quis lectus felis. Duis porttitor ligula enim, ut ornare sapien aliquet non. Vestibulum rhoncus bibendum ipsum eget maximus. In nec sapien elementum, porttitor nulla id, mattis metus. Nulla ac consectetur nisi, quis sagittis magna. Duis elementum laoreet vulputate. Mauris aliquam sem malesuada facilisis aliquet. Vivamus ut erat eget sapien ullamcorper ullamcorper et quis urna. Quisque consectetur neque tortor, sit amet accumsan purus sodales et.
           </code></pre>
         </section>
 
@@ -415,16 +406,87 @@ By the end of the day, your will have the foundational skills to transform an "o
 
         <section class="slide">
             <h2>Language editor</h2>
-            <p>The language editor lets us avoid hard coding words into our theme's code.</p>
-            <p><b>Pro tip</b>: There's a lot of words here, so use the search function to find "Newsletter".</p>
+            <p>The language editor lets us avoid <em>hard coding</em> words into our theme's code.</p>
+            <p><b>Pro tip</b>: There are a lot of words here, so use the search function to find "Newsletter".<br />
+              Try using <code>ctrl</code> or <code>cmd</code> + <code>f</code> on your keyboard.</p>
             <br>
             <img src="framework/img/workshop/edit-language.png" class="center w50">
         </section>
 
         <section class="slide">
+          <h2>What is "hard coding"?</h2>
+          <p>Let's take a step back and learn a bit about HTML.</p>
+          <img class="center" src="framework/img/workshop/huh.gif" alt="gif to demonstrate feeling of confusion" />
+
+
+        </section>
+
+        <section class="slide title">
+          <h1>WHAT IS HTML?</h1>
+          <h2>Hypertext Markup Language</h2>
+        </section>
+
+        <section class="slide">
+          <h2>HTML</h2>
+          <p>HTML is a markup language. It is the essential language of the web. It <strong>  defines the content</strong> of a web page.</p>
+          <p>Just like languages that we speak and write, HTML follows proper "grammar" rules, too. HTML tags are written with left & right angled brackets < > and the forward slash /. Get to know these keys!</p>
+          <img src="framework/img/workshop/keyboard-html.png" alt="outlining keys on keyboard used in HTML" class="center no-shadow" width="700">
+        </section>
+
+        <section class="slide" data-markdown>
+          <script type="text/template">
+          ##HTML Syntax
+          Tags usually come in pairs — an opening tag and a closing tag — to _wrap_ the content.  Note the closing tag has a forward slash <code>/</code>.
+          ```xml
+          <tag> <-- opening tag     closing tag --></tag>
+          ```
+
+          HTML _tags_ describe the content inside of them to the web browser.
+          ```xml
+          <h1>This tag describes a heading<h1>
+          <p>This tag is for paragraphs.</p>
+          ```
+
+          ---
+          ###Pro tip!
+          HTML _tags_ are also often referred to as "elements".
+        </script>
+        </section>
+
+        <section class="slide" data-markdown>
+          <script type="text/template">
+            ##Nesting HTML tags
+
+            When HTML Tags are nested, it creates a family tree-like structure of nodes that are ancestors, parents, children, siblings, etc.
+
+            ```
+            <parent>
+              <child></child>
+            </parent>
+            ```
+            When nesting tags, indent once to make the code easier to read. Indent using the `Tab` key on your keyboard.
+          </script>
+        </section>
+
+        <section class="slide" data-markdown>
+          <script type="text/template">
+            ##ATTRIBUTES
+
+            * provides additional information or instruction for the element
+            * included inside the opening HTML tag
+            * follows the syntax of `attribute="value"` (note the quotes)
+            * many different attributes
+
+            ```xml
+            <tag attribute="value">content</tag>
+            ```
+          </script>
+        </section>
+
+        <section class="slide">
             <h2>What is "hard coding"?</h2>
             <p>When text is explictly written in the HTML, we say that it is <b>hard coded</b>.  This means
-                it can only be changed if someone has access to the site's files.</p>
+                it can only be changed if someone has access to the site's files, and knows how to code.</p>
 
             <div class="delayed">
                 <h3>HTML</h3>
@@ -433,9 +495,6 @@ By the end of the day, your will have the foundational skills to transform an "o
 &lt;h3&gt;$139.99&lt;/h3&gt;
 &lt;p&gt;These boots will keep you warm all winter. Their truly amazing!&lt;/p&gt;
                 </code></pre>
-            </div>
-            <div class="delayed">
-                <img src="framework/img/workshop/face-palm.gif" class="center no-shadow" height="275" width="500">
             </div>
         </section>
 
@@ -531,14 +590,8 @@ Debut | Built with Shopify Slate
         </section>
 
         <section class="slide title">
-            <h1>Break Time</h1>
-            <h2>Feel free to customize your store<br>
-            using the Online store editor.</h2>
-        </section>
-
-        <section class="slide title">
             <h1>Templating</h1>
-            <h2 class="delayed">Building websites in small steps</h2>
+            <h2>Building websites in small steps</h2>
         </section>
 
         <section class="slide centered">
@@ -567,7 +620,7 @@ Debut | Built with Shopify Slate
 
         <section class="slide title">
             <h1>Template files</h1>
-            <h2>Edit HTML/CSS</h2>
+            <h2>Edit HTML and Liquid</h2>
         </section>
 
         <section class="slide">
@@ -712,7 +765,7 @@ Debut | Built with Shopify Slate
         <section class="slide">
             <h2>Exercise #4b: Intro to liquid objects</h2>
 
-            <p>You've decided you need to see the product's <b>type</b> listed after the product's description.</p>
+            <p>How would we add the product's <b>type</b> after the product's description?</p>
             <p>We need to know what <a href="https://docs.shopify.com/themes/liquid-documentation/objects/product">liquid objects are available for products</a>.</p>
             <br>
             <img src="framework/img/workshop/simple-product-type.png" class="center w66">
@@ -857,10 +910,6 @@ Capt. Vinay
 
         </section>
 
-        <section class="slide centered">
-            <img src="framework/img/workshop/magic.gif">
-        </section>
-
         <section class="slide">
             <h2>Exercise #5e: Intro to liquid filters</h2>
               <p><b>Bonus</b>: Link the entire call to action</p>
@@ -945,176 +994,61 @@ Capt. Vinay
             <div class="delayed">
                 <p>What is <code>img_url: '1024x1024'</code>?  Check out <a href="https://docs.shopify.com/themes/liquid-documentation/filters/url-filters#product_img_url">Shopify's preset image size parameters.</a></p>
 
-                <p>What does <code>style="..."</code> mean? This is called "inline CSS".</p>
+                <p>What does <code>style="..."</code> This is where CSS comes in!</p>
             </div>
+        </section>
 
-            <p class="presenter-notes">
-                We aren't using CSS from an external stylesheet because the background image styling
-                needs to be different for every page this template is used on.
-            </p>
+        <section class="slide title">
+          <h1>WHAT IS CSS?</h1>
+          <h2>Cascading Style Sheets</h2>
+        </section>
+
+        <section class="slide">
+          <h2>INTRO TO CSS</h2>
+          <p>Browsers apply default styles attached to various HTML tags, such as bolded text for headings or spaces between paragraphs.</p>
+
+          <p><strong>HTML</strong> is used to define the <strong>meaning</strong> of the content.</p>
+
+          <p><strong>CSS</strong> defines the <strong>presentation</strong> and is the language used to make your web page look any way you want!</p>
         </section>
 
         <section class="slide" data-markdown>
-            ##Referencing CSS - Inline & Internal
+          <script type="text/template">
+          ##CSS Syntax
+          <p>In the example on the slide we were just looking at, we were applying an image as a background.</p>
 
-            There are three ways to include (otherwise known as *referencing*) CSS in an HTML page.
+          ```xml
+          property: value;
+          ```
 
+          <p><strong>Properties</strong> determine the type of style to be applied to the element and is followed by a colon : symbol.</p>
 
-            ###**INLINE**
+          <p><strong>Values</strong> are specific to the property, and must end with a semi-colon ; symbol to indicate the instruction is done.</p>
 
-            Can be added to any HTML element using the `style` *attribute*.
+          ```xml
+          background: red;
+          ```
 
-            ``` &lt;p style=&quot;color: blue;&quot;&gt;I'm writing CSS!&lt;/p&gt; ```
+          <p>To change the background to an image, you must supply the URL within parentheses for the value:</p>
 
-            This technique is not as common because it's harder to maintain but it's good to know how it works, just in case.
+          ```xml
+          background: url(https://yourwebsite.com/images/background.jpg);
+          ```
+        </script>
+        </section>
 
-            ###INTERNAL
+        <section class="slide" data-markdown>
+          <script type="text/template">
+            <h2>CSS Syntax</h2>
 
-            Uses `&lt;style&gt;` and is included in the `&lt;head&gt;` element.
+            <p>In the piece of code we used within the <code>style=""</code> attribute, we used this liquid tag:</p>
 
+            ```xml
+            background-image: url({{ collection.image | img_url: '1024x300', crop: 'top' }});
             ```
-            &lt;head&gt;
-                &lt;title&gt;Page Title&lt;/title&gt;
-                &lt;style&gt; h1 { font-size: 16px; } &lt;/style&gt;
-            &lt;/head&gt;
-            &lt;body&gt; &lt;p&gt;I'm still writing CSS!&lt;/p&gt; &lt;/body&gt;
-            ```
-            This method is preferred over *inline* css, however it is still inefficient because if you had multiple web pages, the style block and any revisions would have to be replicated on every single page.
 
-            ###EXTERNAL
-
-            CSS is written in a separate stylesheet file. The **external** method is most widely used.
-
-            A separate file with a `.css` extension is linked to the HTML file. This method is recommended in most cases because it separates the CSS from the HTML document. The link to the stylesheet is referenced in the `&lt;head&gt;` on any page where these styles need to be included. Only the CSS file needs to be updated rather than the CSS block on every single page. Referenced in the head element with a `&lt;link&gt;` tag and two **attributes**, `rel` and `href`. Just like creating links, the value of the `href` points to the location of the stylesheet. Though it is not required, css files are often saved in a css folder for organization, so make sure the file path points to the appropriate directory. The `rel` attribute describes the relationship.
-
-            ```
-            &lt;head&gt;
-                &lt;title&gt;Page Title&lt;/title&gt;
-                &lt;meta charset=&quot;utf-8&quot;&gt;
-                &lt;link rel=&quot;stylesheet&quot; href=&quot;css/style.css&quot;&gt;
-            &lt;/head&gt;
-            ```
-        </section>
-
-        <section class="slide">
-            <h2>Write some sassy CSS</h2>
-            <p>Many Shopify themes will allow you to write SCSS instead of CSS.</p>
-
-            <div class="delayed">
-                <p class="text-center"><a href="http://sass-lang.com/" alt="Learn about SASS">Learn about SASS</a></p>
-                <img src="framework/img/workshop/sassy-lama.gif" class="center w50">
-            </div>
-
-            <p class="presenter-notes">
-                SASS stands for Syntactically Awesome Style Sheets.  SCSS stands for Sassy CSS.
-                You can learn about SASS either at this link, or from this Llama.
-            </p>
-        </section>
-
-        <section class="slide">
-            <p>Paste this at the bottom of <b>theme.scss.liquid</b>:</p>
-            <div class="">
-                <h3>theme.scss.liquid</h3>
-                <pre><code class="hljs css">
-// Collection Hero
-//----------------------------------------
-.collection-hero {
-  position: relative;
-  overflow: hidden;
-  margin-top: -$gutter-site;
-  margin-bottom: $gutter-site-mobile;
-
-  @include media-query($medium-up) {
-    margin-bottom: $section-spacing-small;
-  }
-}
-
-.collection-hero__image {
-  min-height: 300px;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  opacity: 1;
-}
-
-.collection-hero__title {
-  position: absolute;
-  color: $color-overlay-title-text;
-  width: 100%;
-  text-align: center;
-  left: 0; right: 0; top: 50%;
-  @include transform(translateY(-50%));
-
-  @include media-query($medium-up) {
-    font-size: em($font-size-header + 6);
-  }
-}
-
-.collection-hero__title-wrapper::before {
-  content: '';
-  position: absolute;
-  top: 0; right: 0; bottom: 0; left: 0;
-  background-color: $color-image-overlay;
-  opacity: $opacity-image-overlay;
-}
-
-.collection-description {
-  margin-bottom: $gutter-site-mobile;
-  margin-top: $gutter-site-mobile;
-
-  @include media-query($medium-up) {
-    margin-bottom: $section-spacing-small;
-    margin-top: $section-spacing-small;
-  }
-}
-                </code></pre>
-            </div>
-        </section>
-
-        <section class="slide">
-          <h2>Exercise #6b: Collection page hero images</h2>
-          <img class="center w75" src="framework/img/workshop/collection-image-result.png">
-        </section>
-
-        <section class="slide centered">
-            <img class="w100" src="framework/img/workshop/great-success.gif">
-        </section>
-
-        <section class="slide title">
-            <h1>Responsive Web Design</h1>
-            <h2>One website : Many screens</h2>
-        </section>
-
-        <section class="slide">
-            <h2>Responsive Web Design</h2>
-            <p>What does our new collection template look like on smaller devices?</p>
-
-            <img src="framework/img/workshop/theme-editor-mobile.png" class="center w75">
-        </section>
-
-        <section class="slide">
-            <h2>Media Queries</h2>
-            <p>Control the style at different <b>viewport sizes</b> with the <a href="http://www.w3schools.com/cssref/css3_pr_mediaquery.asp" alt="CSS Media Queries">@media rule</a>.</p>
-
-            <h3>theme.scss.liquid</h3>
-            <pre><code class="hljs css">
-.collection-hero__image {
-  min-height: 180px; /* For small screens */
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  opacity: 1;
-
-  @media only screen and (min-width: 750px) {
-    min-height: 300px; /* For larger screens */
-  }
-}
-            </code></pre>
-        </section>
-
-        <section class="slide title">
-            <h1>Break time</h1>
-            <h2 class="delayed">p.s. Something's wrong with our collection template</h2>
+            <p><br>This will check in Shopify if an image was uploaded for the collection, and then will crop it to the specified size. There's one problem though - what if an image wasn't uploaded for the collection?</p>
+          </script>
         </section>
 
         <section class="slide">
@@ -1225,12 +1159,11 @@ Capt. Vinay
         <section class="slide">
             <h2>Exercise #7: Show a discount code</h2>
 
-            <p>You decide you want to show a discount code on Product pages <b>if</b> the product is part of the <b>Household collection</b>.</p>
+            <p>How would you show a discount code on Product pages <b>if</b> the product is part of a specific collection - in this case the <b>Household collection</b>?</p>
 
             <ul class="delayed">
                 <li>Make a <a href="https://docs.shopify.com/manual/your-store/discounts" alt="Discount codes">discount code</a> that will only work for products in the Household collection.</li>
                 <li>Modify <b>product-template.liquid</b> to display the code in an if-statement.</li>
-                <li>Style our new call to action with some CSS.</li>
             </ul>
 
             <img src="framework/img/workshop/discount-example.png" class="center delayed w75">
@@ -1313,29 +1246,7 @@ Capt. Vinay
 
         <section class="slide">
             <h2>Exercise #7c: Show a discount code</h2>
-            <p>At the bottom of <code>theme.scss.liquid</code>, write: </p>
-            <h3>theme.scss.liquid</h3>
-            <pre><code class="hljs css">
-/* === Special discount === */
-
-.special-discount {
-  margin: 2em auto;
-}
-
-.special-discount__message {
-  border: 1px #1f512b solid;
-  padding: 8px 15px;
-  background: #26863d;
-  color: white;
-  font-weight: normal;
-  display: inline-block;
-}
-
-.special-discount__code {
-  font-weight: bold;
-  letter-spacing: 2px;
-}
-            </code></pre>
+            <p>Those <code>class</code> attributes are used by the CSS to apply the styles to our discount code. The CSS applies a green background, changes the font styles and spacing.</p>
 
         </section>
 
@@ -1350,75 +1261,13 @@ Capt. Vinay
         </section>
 
         <section class="slide title">
-            <h1>BREAK TIME</h1>
-            <h2>Oh man, you've earned it.</h2>
-        </section>
-
-        <section class="slide title">
-            <h1>Alternate Templates</h1>
-        </section>
-
-        <section class="slide">
-            <div class="col col--one-half">
-                <img src="framework/img/workshop/product-page.png">
-            </div>
-            <div class="col col--one-half delayed">
-                <img src="framework/img/workshop/alternate-product-page.png">
-            </div>
-        </section>
-
-        <section class="slide">
-            <h2>Exercise #8: New product template</h2>
-
-            <p>You need a way to <b>hide the price and Add to Cart button</b> for select products.</p>
-            <p>In your theme's Templates folder, click "Add a new template".</p>
-            <p>Create a new <strong>product</strong> template called <b>info-only</b>.</p>
-
-            <img src="framework/img/workshop/create-alt-template.png" class="center">
-        </section>
-
-        <section class="slide">
-            <h2>Exercise #8b: New product template</h2>
-            <p>Edit the product titled <b>Black Bead Hoop Earrings - Swaziland</b>.</p>
-            <p>Set its visibility to <code>Online store</code> and the template to <code>product.info-only</code>.</p>
-            <br>
-            <div class="row">
-              <div class="col col--one-half">
-                <img src="framework/img/workshop/visible-online.png" class="w75">
-              </div>
-              <div class="col col--one-half">
-                <img src="framework/img/workshop/change-template.png" class="w75">
-              </div>
-            </div>
-        </section>
-
-        <section class="slide">
-            <h2>Exercise #8c: New product template</h2>
-            <h3>product.info-only.liquid</h3>
-
-            <ul>
-              <li>Modify the new template to include a new section: <code>{% section 'product-info-only' %}</code></li>
-              <li>Add a new section with that name, then paste in the contents of the <code>product-template</code> section file.</li>
-              <li>Delete the product's price information from the new section: <code>&lt;div itemprop="offers" itemscope itemtype="http://schema.org/Offer"&gt;...&lt;/div&gt;</code></li>
-              <li>Insert a new heading where the button was: <code>&lt;p class="announcement"&gt;Coming soon!&lt;/p&gt;</code>
-              <li>Add some of your own styles in the CSS.</li>
-            </ul>
-        </section>
-
-        <section class="slide">
-            <h2>Exercise #8d: New product template</h2>
-            <br>
-            <img src="framework/img/workshop/product-coming-soon.png" class="center w75">
-        </section>
-
-        <section class="slide title">
             <h1>Snippets</h1>
-            <h2 class="delayed">Make your code smarter<span class="delayed">, cleaner</span><span class="delayed">, more efficient </span><span class="delayed">and lazy</span></h2>
+            <h2 class="delayed">Make your code smarter<span class="delayed">, cleaner</span><span class="delayed">, and more efficient</span></h2>
         </section>
 
         <section class="slide">
             <h2>Exercise #9: Limit a loop</h2>
-            <p>You've decided there are too many products on your home page.  You only want 12 to show up.</p>
+            <p>If you think there are too many (or not enough) products on your home page, how could we change this?</p>
 
             <p>What template file controls what's on the homepage?</p>
 
@@ -1431,7 +1280,7 @@ Capt. Vinay
               <ul>
                 <li>Open <code>index.liquid</code>.</li>
                 <li>Locate where the featured products code is written in the template file.</li>
-                <li>Find out how to limit the number displayed.</li>
+                <li>Find out how to control the number of products display here.</li>
               </ul>
             </div>
         </section>
@@ -1443,10 +1292,6 @@ Capt. Vinay
             <p>There doesn't appear to be much here...</p>
 
             <img src="framework/img/workshop/fooled-me.gif" class="w50 center">
-
-            <p class="presenter-notes">
-                Have everyone open up index.liquid.  It only has a couple snippets.  Explain what include does.
-            </p>
         </section>
 
         <section class="slide">
