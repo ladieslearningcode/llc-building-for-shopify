@@ -9,6 +9,11 @@ h2 {
 .intro li, .last li {
   margin-bottom: 0; }
 
+.intro .logo{
+  height: auto;
+  width: 350px;
+}
+
 p {
   font-size: 27px;
   line-height: 1.6em;
@@ -88,7 +93,7 @@ img:not(.no-shadow) {
 
 .w66 {
   width: 66%; }
-    
+
 .w50 {
   width: 50%; }
 
