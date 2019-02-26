@@ -4,7 +4,7 @@ In 2019, we want to challenge Canadians to pause and think, learn about, share, 
 
 *May's theme is ENTREPRENEURSHIP.*
 
-See slide 4 for suggestions on how learners can incorporate this month’s theme into their projects - if they choose to participate.
+See slide 5 for suggestions on how learners can incorporate this month’s theme into their projects - if they choose to participate.
 
 # Ladies Learning Code
 # Building a web store with Shopify and Liquid
