@@ -27,27 +27,63 @@
 <!-- Timer/progress bar: Define the presentation duration using "data-duration" in minutes. -->
 <body data-duration="360">
 
-    <!-- Welcome slide -->
-    <header class="slide intro first">
+    <main>
+
+    <!-- Welcome slide-->
+    <section class="slide" data-markdown>
+      <script type="text/template">
+        <h2 class="heading-bg">
+            <span style="color:#ffffff;">Welcome!</span><br>
+        </h2>
+
+        ## GET CONNECTED:
+
+        NETWORK: {network}<br>
+        PASSWORD: {password}
+
+        <hr>
+
+        ## DOWNLOAD &amp; INSTALL:
+
+        Learner files (zip file): <a href="https://github.com/ladieslearningcode/llc-building-for-shopify/archive/master.zip">bit.ly/llc-building-for-shopify</a>
+        <ol>
+          <li>Unzip the learner file (<em>extract all</em> if you’re on a PC)</li>
+          <li>Open <em>slides.html</em> in the browser to view the slides</li>
+        </ol>
+
+      </script>
+    </section>
+
+    <section class="slide intro first">
         <img class="logo no-shadow" src="framework/img/logo-llc-white.png" alt="Ladies Learning Code logo">
         <div class="info">
             <h1 class="heading-bg">
                 <span>Building a store with Shopify</span><br>
             </h1>
-            <div class="heading-bg connected">
-                <span class="dark">GET CONNECTED:</span>
-                <span class="light">NETWORK: {network}</span><br>
-                <span class="light">PASSWORD: {password}</span>
-            </div>
-        </div>
 
-        <!--div class="sponsor">
+            <h3><span>with </span>{presenter}</h3>
+
+            <img class="instructor-img" src="framework/img/workshop/presenter.png" alt="">
+             <!-- If you have a blog or twitter account you'd like to share -->
+            <ul>
+                <li><i class="fa fa-desktop"></i><a href="#">blog.ca</a></li>
+                <li><i class="fa fa-twitter"></i><a href="http://twitter.com/">@twitter</a></li>
+            </ul>
+        </div>
+        <!--
+        <div class="sponsor">
             <p>In partnership with:</p>
             <img src="framework/img/telus-logo-white.svg" alt="Telus">
-        </div-->
-    </header>
+        </div>-->
+    </section>
 
-    <main>
+       <section class="slide title" data-markdown>
+         <script type="text/template">
+           # Introductions
+
+         </script>
+       </section>
+
         <section class="slide" data-markdown data-toc>
           <script type="text/template">
             ## Coders' code
@@ -57,6 +93,21 @@
             1. Be mindful of how much space you take up in conversations
             1. Ask questions
             1. Try your best (and have fun!)
+
+          </script>
+        </section>
+
+       <section class="slide" data-markdown>
+          <script type="text/template">
+            ## May's Theme is...
+
+            # ENTREPRENEURSHIP
+
+            Entrepreneurship is about bringing your ideas to life. We would not have the things we interact with every day, if it weren’t for it. If you could have an idea come to life, what might it be? What would you invent?
+
+            **Participate in this month's theme by:** Building your own ecommerce store.
+
+            Share your project using #clcCode4Change. More info [here](https://www.canadalearningcode.ca/code-can-change-the-world/).
 
           </script>
         </section>

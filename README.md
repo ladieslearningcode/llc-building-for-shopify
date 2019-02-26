@@ -1,19 +1,27 @@
+## This content is featured in a monthly theme!
+
+In 2019, we want to challenge Canadians to pause and think, learn about, share, and work towards solving issues that affect us all on a global scale – while leveraging the power of technology!  More information on monthly themes [here](https://www.canadalearningcode.ca/monthly-themes/)
+
+*May's theme is ENTREPRENEURSHIP.*
+
+See slide 4 for suggestions on how learners can incorporate this month’s theme into their projects - if they choose to participate.
+
+# Ladies Learning Code
 # Building a web store with Shopify and Liquid
 
 An introductory workshop to Shopify and customizing themes with Liquid.  Made for [Ladies Learning Code](http://ladieslearningcode.com).
 
-* [Workshop information](#workshop-information)
-  * [Building a web store with Shopify and Liquid](#building-a-web-store-with-Shopify-and-Liquid)
-  * [What will you learn?](#what-will-you-learn)
-  * [Is this workshop for you?](#is-this-workshop-for-you)
-* [Instructor information](#instructor-information)  
-  * [Ladies Learning Code slide deck template](#ladies-learning-code-slide-deck-template)
+## Quick Links
+
+Preview Slides: https://ladieslearningcode.github.io/llc-building-for-shopify/slides.html
 
 ### Attributions
 
-Created with <a href="https://github.com/LeaVerou/csss/sample-slideshow.html">Lea Verou's CSS-based SlideShow System</a> and <a href="http://lab.hakim.se/reveal-js/">reveal.js</a>. Syntax highlighting courtesy of http://highlightjs.org. Best viewed in Chrome or Firefox.
+Content created by [Nathan Ferguson](https://github.com/NathanPJF) for Canada Learning Code, with contributions from Stacie Daponte.
 
-Email questions & comments to <content@ladieslearningcode.com>.
+Slide presentation created by Christina Truong for Canada Learning Code.
+
+Email questions & comments to [content@canadalearningcode.ca](mailto:content@canadalearningcode.ca).
 
 This content was created with the advisory of and in collaboration with educators, industry representatives and technologists. These individuals have helped us to ensure that lesson content represents the technology landscape and educator needs, with learners in mind. If you'd like to contribute to future lesson content development, let us know [here](https://docs.google.com/forms/d/e/1FAIpQLSfJ8NSMKVAmzpdn3EAymxCbDDz3XZPxyDdmtQ87GECuvXzzDQ/viewform).
 
