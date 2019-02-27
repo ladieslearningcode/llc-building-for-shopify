@@ -15,6 +15,8 @@ An introductory workshop to Shopify and customizing themes with Liquid.  Made fo
 
 Preview Slides: https://ladieslearningcode.github.io/llc-building-for-shopify/slides.html
 
+Preview Instructor Notes: https://ladieslearningcode.github.io/llc-building-for-shopify/notes.html
+
 ### Attributions
 
 Content created by [Nathan Ferguson](https://github.com/NathanPJF) for Canada Learning Code, with contributions from Stacie Daponte.
