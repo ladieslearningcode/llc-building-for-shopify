@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>Canada en programmation</title>
+  <!-- Styles propres au thème -->
+  <link href='http://fonts.googleapis.com/css?family=Quicksand%7CPacifico%7COpen+Sans :400italic,400,300' rel='stylesheet' type='text/css' data-noprefix>
+  <link rel="stylesheet" href="http ://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="framework/css/highlightjs-themes/vs.css" data-noprefix>
+  <link rel="stylesheet" href="framework/css/theme-llc.css" data-noprefix>
+  <link rel="shortcut icon" href="framework/img/favicon.ico">
+
+  <!-- Styles propres à l'atelier -->
+  <link rel="stylesheet" href="framework/css/workshop.css" data-noprefix>
+
+  <!-- S'occupe des préfixes CSS3 -->
+  <script src="framework/scripts/prefixfree.min.js"></script>
+
+  <!-- Ouvre tous les liens dans une nouvelle fenêtre -->
+  <base target="_blank">
+</head>
+
+<!-- Barre de progression et de durée : définissez la durée de la présentation en minutes avec « data-duration ». -->
+<body class="en" data-duration="360">
+
+
+  <main>
+
+  <section class="slide" data-toc data-markdown>
+    <script type="text/template">
+      ###Notes de la formatrice
+
+      ###Femmes en programmation : création d'une boutique avec Shopify
+
+      <br>
+      ##Ordre du jour
+
+      <strong>Remarque importante :</strong>
+      L'horaire est là pour vous orienter, mais vous n'avez pas à le respecter à la lettre! Plutôt que de passer d'une diapositive à l'autre pour terminer rapidement, assurez-vous que les apprenantes suivent le rythme de l'atelier.
+
+      <em>Attention</em> : cet ordre du jour a été conçu pour un atelier d'une seule journée.
+
+      Si vous faites un atelier qui s'étend sur deux soirées la fin de semaine, n'hésitez pas à diviser l'horaire en deux. N'oubliez pas de prendre une pause de 15 à 30 minutes tous les jours. Les 15 à 20 premières minutes de la deuxième journée doivent être consacrées à la révision du contenu et aux questions sur les activités du jour précédent.
+
+      * <strong>Intro (10 h 00 - 11 h 00)</strong> : Objectif du jour, créer un compte pour partenaires, configurer une boutique de développement, téléverser des produits
+      * <strong>Thèmes (11 h 00 - 12 h 30)</strong> : Téléverser un thème, modifier les paramètres du thème, exercice en grand groupe, gérer les collections
+      * <strong>Dîner (12 h 30 - 13 h 30)</strong>
+      * <strong>Pages (13 h 30 - 14 h 00)</strong> : Créer des pages, créer et modifier le menu de navigation, éditeur de langue, intro au HTML, exercice « ruiner  le code »
+      * <strong>Modèles (14 h 00 - 14 h 30)</strong> : Structure du thème et modèles, intro aux objets Liquid, filtres Liquid
+      * <strong>Expressions conditionnelles (14 h 30 - 15 h 30)</strong> : exercice « image de premier plan », intro au CSS, pseudocode, expressions conditionnelles (si/if), coupons de réduction
+      * <strong>Finalisation (15 h 30 - 16 h 00)</strong> : boucles « for », extraits de code pour la pagination<br>
+      Si vous avez du temps supplémentaire, faites un exercice de prolongement (exercice n° 10 ou Bogus Gateway).
+
+
+      <br>
+      ##Notes générales
+
+      * <strong>Important!</strong> Accordez du temps aux apprenantes pour qu'elles puissent télécharger les fichiers d'apprentissage. À leur entrée dans la salle, vérifiez si les apprenantes ont bien téléchargé les fichiers.
+
+      * Problème courant avec les fichiers d'apprentissage : sur Windows, il est essentiel d'extraire le dossier avant d'ouvrir les fichiers. Si une apprenante ouvre les diapositives et que les styles ne s'affichent pas, normalement, le problème peut être réglé avec l'extraction.
+      * Pour créer un compte pour partenaires Shopify, il est possible que les apprenantes doivent fournir leurs informations PayPal et leur numéro de téléphone. Toutefois, elles ne seront pas facturées pour la création d'un compte. Un compte pour partenaire sert d'abord aux développeurs de thèmes et d'apps, alors les informations PayPal permettent à ces développeurs de gagner de l'argent avec leur travail!
+      Avant le début de l'atelier, n'oubliez pas de modifier les identifiants pour le Wi-Fi sur la diapositive n° 1 et les informations sur la formatrice sur la diapositive n° 2.
+
+      <br>
+      ##Exemples
+
+      <strong>Diapositive n° 6 : (logo de Shopify)</strong><br>
+      L'application Shopify héberge vos fichiers, crée une base de données pour vos produits et vos commandes et s'assure de la sécurité de vos transactions financières. Shopify élimine donc les barrières à la création d'une boutique en ligne. L'entreprise a été fondée en Ontario (à Ottawa).
+
+      <strong>Diapositives n° 7-8 : (logos de marques)</strong><br>
+      L'application est utilisée par de nombreuses marques que vous connaissez bien.
+
+      <strong>Diapositive n° 9 : Objectif du jour</strong><br>
+      Liquid est un langage de programmation basé sur le Ruby qui a été créé par Shopify.
+      Il est, avant tout, un langage de création de modèles.
+
+      <strong>Diapositive n° 13 : Compte de partenaire Shopify</strong><br>
+      Le programme pour partenaires Shopify est excellent pour obtenir des revenus de clients et accéder à des ressources supplémentaires. De plus, le programme est pratique pour les personnes débutant dans la création d'une boutique en ligne, car les boutiques peuvent être modifiées à l'infini avant de les publier.
+
+      <strong>Diapositive n° 14 : Je suis partenaire Shopify. Qu'est-ce que ça veut dire?</strong><br>
+      Lorsque vous « finissez » de travailler sur une boutique de développement, vous pouvez la transférer à un commerçant (un client), qui décidera si vous pourrez y avoir accès par la suite. Vous pouvez gagner de l'argent en créant des boutiques de développement pour de nouveaux commerçants sur Shopify, des thèmes à vendre ou des applications à « prêter ».
+
+      <strong>Diapositive n° 17 : Capture d'écran « modifier le produit »</strong><br>
+      Lorsque les apprenantes auront rafraîchi la page, demandez-leur de cliquer sur n'importe quel produit pour afficher l'écran dans cette diapositive.
+
+      <strong>Diapositive n° 18 : Téléverser un fichier CSV</strong><br>
+      Selon la taille de vos stocks, il est parfois plus facile d'importer des produits à partir d'un fichier CSV plutôt que de saisir chaque produit individuellement avec l'interface de Shopify. Les apprenantes plus à l'aise d'utiliser des programmes qui fonctionnent avec des fichiers CSV pourront saisir des données plus rapidement.
+
+      <strong>Diapositive n° 19 : (Sans titre, capture d'écran « informations sur le produit »)</strong><br>
+      Montrez-leur la description détaillée dans les informations sur le produit. N'oubliez pas de penser aux mots que les utilisateurs pourraient chercher pour trouver un objet en particulier et ajoutez-les au corps de la description. Par exemple, ajoutez des mots en lien avec les matériaux, les méthodes de production et les tailles.
+
+      Cliquez sur le bouton pour afficher les éléments de la page de produits et montrez les éléments les plus courants à la classe :
+      <ul>
+        <li>Balises (tags) - Ajoutez-en autant que vous voulez. Elles servent à trier les produits.</li>
+        <li>Multiples images</li>
+        <li>Comparer le prix (compare at price) - Indique à Shopify s'il y a une réduction sur l'objet.</li>
+        <li>Gestion des stocks (inventory policy) - Indique si Shopify doit gérer les stocks.</li>
+        <li>Optimisation pour les moteurs de recherche (SEO) : L'apparence des pages dans les moteurs de recherche.</li>
+      </ul>
+
+      <strong>Diapositive n° 26 : Exercice n° 1 : Explorer le thème</strong><br>
+      Faites les premières modifications avec le groupe, puis laissez la liste affichée à l'écran pour que les apprenantes fassent le reste par elles-mêmes.
+
+      Accordez du temps au groupe pour expérimenter avec les modifications. Les mentores peuvent les aider si elles ont des problèmes avec la liste.
+
+      <strong>Diapositive n° 30 : Collections à multiples conditions</strong><br>
+      Si les apprenantes ne peuvent pas deviner la réponse à cette question seules, faites-leur remarquer la différence entre « et » et « ou » (and / or).
+
+      <strong> Diapositive n° 42 : HTML</strong><br>
+      Il est possible que ce soit la première fois que les apprenantes voient du HTML. Prenez quelques instants pour leur expliquer à quoi servent les paires de balises dans l'exemple.
+
+      <strong>Diapositive n° 43 : Quelle est l'utilité de Liquid?</strong><br>
+
+      Expliquez aux apprenantes que les caractères {{ }} s'appellent des accolades. Elles sont utilisées fréquemment dans les langages de création de modèles.
+
+      <strong>Diapositive n° 54 : Ruiner du code intelligemment</strong><br>
+      La fonction de duplication de code de Shopify est extrêmement pratique. Il est facile de passer d'une partie de code dupliquée à une autre. Les erreurs ne coûtent pas aussi cher que sur d'autres systèmes de gestion de contenu.
+
+      <strong>Diapositive n° 57 : (Image de modèle)</strong><br>
+      Il y a plusieurs parties dans un site Web. Il est préférable de travailler une étape à la fois. En divisant un problème en petites parties, vous facilitez votre travail et mettez en pratique votre pensée informatique!
+
+      <strong>Diapositive n° 60 : Disposition</strong><br>
+      Expliquez la différence entre un thème et un modèle (« template »). Un thème est une collection de fichiers de modèles.
+
+      <strong>Diapositive n° 65 : Exercice n° 4 : Intro aux objets Liquid</strong><br>
+      Discutez brièvement de l'importance de consulter la documentation. Il n'est pas nécessaire de mémoriser les notions, mais il faut savoir où trouver et comment chercher les informations dont nous avons besoin.
+      Rappelez à la classe que les modifications doivent être progressives. Plutôt que de tout modifier en même temps, les apprenantes devraient faire une modification à la fois, étape par étape, et afficher un aperçu des changements.
+
+      <strong>Diapositive n° 71  : Types de filtres</strong><br>
+      Comme il s'agit de la première fois qu'elles voient une balise <code>&lt;a&gt;</code>, expliquez les notions sur le sujet brièvement, car elles créeront leur propre balise bientôt.
+
+      <strong>Diapositive n° 75 : Exercice n° 6</strong><br>
+      Expliquez ce qu'est une image de premier plan (« hero »).
+
+      <strong>Diapositive n° 77 : Exercice n° 6</strong><br>
+      Suggestion : gardez l'éditeur de code et le tableau de bord Shopify dans deux onglets différents pour passer facilement d'une page à l'autre. Sinon, les apprenantes pourraient avoir de la difficulté à retourner à l'éditeur de code.
+
+      <strong>Diapositive n° 82 : Captures d'écran de bannières, y compris une brisée</strong><br>
+      Certaines collections n'ont pas d'image de premier plan. Vous verrez donc un espace vide à l'endroit où l'image devrait s'afficher.
+
+      <strong>Diapositive n° 89 : Exercice n° 6</strong><br>
+      Mettez le groupe au défi de trouver les trois réponses.
+      Laissez les apprenantes explorer la boucle « for » et l'expression conditionnelle par elles-mêmes ou avec une mentore.
+
+      <strong>Diapositive n° 93 : À la découverte de la boucle « for »</strong><br>
+      Essayez de faire deviner les réponses au groupe sans indices.
+
+      <strong>Diapositive n° 109 : Exercice final : MAGASINAGE</strong><br>
+      Cliquez sur le lien « Bogus payment gateway » et suivez les étapes avec la documentation pour permettre au groupe de comprendre le processus. Il est possible que vous deviez saisir votre numéro de téléphone quand vous passez à la caisse.
+    </script>
+  </section>
+
+  </main><!-- Section principale cls -->
+
+  <script src="http ://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script src="framework/scripts/slideshow.js"></script>
+
+  <!-- Enlevez les commentaires des modules dont vous avez besoin -->
+  <script src="framework/scripts/plugins/css-edit.js"></script>
+  <script src="framework/scripts/plugins/css-snippets.js"></script>
+  <script src="framework/scripts/plugins/css-controls.js"></script>
+  <!-- <script src="plugins/code-highlight.js"></script>-->
+
+  <script src="framework/scripts/plugins/markdown/marked.js"></script>
+  <script src="framework/scripts/plugins/markdown/markdown.js"></script>
+  <!-- <script src="framework/scripts/plugins/highlight/highlight.js"></script> -->
+  <script src="framework/scripts/plugins/highlight/highlight-8.4.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  <script>
+      var slideshow = new SlideShow();
+
+      // Regroupe tous les éléments .snippet
+      var snippets = document.querySelectorAll('.snippet');
+      for(var i=0; i<snippets.length; i++) {
+          new CSSSnippet(snippets[i]);
+      }
+
+      // Ajoute « modifiez-moi » aux champs de code à modifier
+      jQuery(document).ready(function(){
+          jQuery(".snippet").before("<span class=\"edit\">modifiez-moi</span>");
+      });
+  </script>
+</body>
+</html>
