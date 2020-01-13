@@ -11,6 +11,7 @@
     <link href='http://fonts.googleapis.com/css?family=Quicksand%7CPacifico%7COpen+Sans:400italic,400,300' rel='stylesheet' type='text/css' data-noprefix>
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="framework/css/highlightjs-themes/vs.css" data-noprefix>
+    <link rel="stylesheet" href="framework/css/a11y/plugin.css">
     <link rel="stylesheet" href="framework/css/theme-llc.css" data-noprefix>
     <link rel="shortcut icon" href="framework/img/favicon.ico">
 
@@ -32,14 +33,14 @@
     <!-- Diapositives de bienvenue-->
     <section class="slide" data-markdown>
       <script type="text/template">
-        <h2 class="heading-bg">
+        <h1 class="heading-bg">
             <span style="color:#ffffff;">Bienvenue!</span><br>
-        </h2>
+        </h1>
 
         ## CONNECTEZ-VOUS :
 
-        RÉSEAU : {réseau}<br>
-        MOT DE PASSE : {mot de passe}
+        - RÉSEAU : {réseau}<br>
+        - MOT DE PASSE : {mot de passe}
 
         <hr>
 
@@ -48,20 +49,20 @@
         Fichiers d'apprentissage (dossier zip) : <a href="https://github.com/ladieslearningcode/llc-building-for-shopify/archive/master.zip">bit.ly/llc-building-for-shopify</a>
         <ol>
           <li>Dézippez le dossier (<em>Extraire tout</em> sur un PC).</li>
-          <li>Ouvrez <em>slides-fr.html</em> dans un navigateur pour afficher les diapositives.</li>
+          <li>Ouvrez <code>slides-fr.html</code> dans un navigateur pour afficher les diapositives.</li>
         </ol>
 
       </script>
     </section>
 
     <section class="slide intro first">
-        <img class="logo no-shadow" src="framework/img/logo-llc-white.png" alt="Femmes en programmation : logo">
+        <img class="logo no-shadow" src="framework/img/logo-llc-white.png" alt="Femmes en programmation">
         <div class="info">
             <h1 class="heading-bg">
                 <span>Création d'une boutique avec Shopify</span><br>
             </h1>
 
-            <h3><span>avec </span>{présentatrice}</h3>
+            <p><span>avec </span>{présentatrice}</p>
 
             <img class="instructor-img" src="framework/img/workshop/presenter.png" alt="">
              <!-- Ajoutez l'adresse de votre blogue ou de votre compte Twitter -->
@@ -86,7 +87,7 @@
 
         <section class="slide" data-markdown data-toc>
           <script type="text/template">
-            ## Le code des programmeuses
+            # Le code des programmeuses
 
             1. Soyez enthousiastes et accueillantes
             1. Respectez les autres en choisissant bien vos mots et vos actions
@@ -107,22 +108,33 @@
 
             **Participez au thème de ce mois-ci :** créez votre propre boutique en ligne.
 
-            Partagez vos créations sur les réseaux sociaux avec le mot-clic #clcCode4Change. Cliquez [ici](https://www.canadalearningcode.ca/code-can-change-the-world/) pour obtenir plus d'informations.
+            Partagez vos créations sur les réseaux sociaux avec le mot-clic #clcCode4Change. [Obtenir plus d'informations](https://www.canadalearningcode.ca/code-can-change-the-world/).
 
           </script>
         </section>
 
         <section class="slide centered">
-            <img class="no-shadow" style="padding:40px 0; width: 39%;" src="framework/img/workshop/shopify-logo.svg">
-            <br>
-            <h2 class="delayed">Application de commerce</h2>
-            <br>
-            <h2 class="delayed">Plus de 600 000 commerçants dans 150+ pays</h2>
-            <br>
-            <h2 class="delayed">Siège social au Canada!</h2>
+            <h1 class="sr-only">Shopify</h1>
+            <img class="no-shadow" style="padding:40px 0; width: 39%;" src="framework/img/workshop/shopify-logo.svg" role="img" alt="Shopify">
+            <ul class="no-list">
+              <li class="delayed">Application de commerce</li>
+              <li class="delayed">Plus de 600 000 commerçants dans 150+ pays</li>
+              <li class="delayed">Siège social au Canada!</li>
+            </ul>
         </section>
 
         <section class="slide big-brands bg--image">
+          <h1 class="sr-only">Marques Shopify</h1>
+          <ul class="sr-only">
+            <li>Johnny Cupcakes</li>
+            <li>Goldie Blox</li>
+            <li>Penny Arcade</li>
+            <li>Wikipedia</li>
+            <li>Kylie Cosmetics</li>
+            <li>The Economist</li>
+            <li>Leesa</li>
+            <li>GitHub</li>
+          </ul>
         </section>
 
         <section class="slide title">
@@ -132,7 +144,7 @@
 
         <section class="slide">
             <div class="col col--one-half">
-                <h2>Plan de cours</h2>
+                <h1>Plan de cours</h1>
                 <ul>
                     <li>Plateforme Shopify et tableau de bord</li>
                     <li>Aperçu des modèles</li>
@@ -144,12 +156,12 @@
             </div>
 
             <div class="col col--one-half">
-                <img src="framework/img/workshop/debut-theme-mobile.png" class="contain--img">
+                <img src="framework/img/workshop/debut-theme-mobile.png" class="contain--img" alt="">
             </div>
         </section>
 
         <section class="slide centered">
-            <img src="framework/img/workshop/im-ready.gif" class="w100">
+            <img src="framework/img/workshop/im-ready.gif" class="w100" alt="Je suis prêt.">
         </section>
 
          <section class="slide title">
@@ -158,25 +170,25 @@
         </section>
 
         <section class="slide">
-            <h2>Compte pour partenaire Shopify</h2>
+            <h1>Compte pour partenaire Shopify</h1>
 
             <p>Connectez-vous à l'adresse <a href="http://www.shopify.ca/partners" alt="Programme de partenaires Shopify">shopify.ca/partners</a>.</p>
 
-            <h3>Configurer le compte</h3>
+            <h2>Configurer le compte</h2>
 
             <p>Indiquez une adresse courriel pour activer votre compte. Lorsque vous aurez créé votre compte, vous devrez ensuite créer une boutique de développement. Si vous avez déjà une idée de marque ou d'entreprise en tête, lancez-vous! Sinon, ne perdez pas trop de temps à penser, car vous pourrez ajouter d'autres boutiques plus tard.</p>
             <figure class="w66">
-                <img src="framework/img/workshop/partner-program.png">
+                <img src="framework/img/workshop/partner-program.png" alt="Bannière de la page d'accueil du partenaire Shopify, avec Sara Mote.">
                 <figcaption>Partenaire Shopify promu : shopify.ca/partners</figcaption>
             </figure>
 
         </section>
 
         <section class="slide">
-            <h2>Je suis partenaire Shopify. Qu'est-ce que ça veut dire?</h2>
+            <h1>Je suis partenaire Shopify. Qu'est-ce que ça veut dire?</h1>
             <br>
             <div class="col col--one-third">
-              <img class="contain--img" src="framework/img/workshop/partners-sidebar.png">
+              <img class="contain--img" src="framework/img/workshop/partners-sidebar.png" alt="">
             </div>
 
             <div class="col col--two-thirds">
@@ -195,15 +207,16 @@
         </section>
 
         <section class="slide">
-            <h2>Créer une boutique de développement</h2>
+            <h1>Créer une boutique de développement</h1>
             <br>
-            <img src="framework/img/workshop/create-dev-store.png" alt="Créer une boutique de développement" class="center">
+            <img src="framework/img/workshop/create-dev-store.png" alt="Tableau de bord du partenaire Shopify, bouton Créer un magasin en surbrillance." class="center">
 
 
         </section>
 
         <section class="slide">
-            <img src="framework/img/workshop/shopify-home.png" alt="Accueil de Shopify" class="center">
+          <h1 class="sr-only">Administrateur Shopify</h1>
+            <img src="framework/img/workshop/shopify-home.png" alt="Page d'accueil du panneau d'administration Shopify; barre de recherche en haut, navigation à gauche, cartes de contenu utiles en principal." class="center">
         </section>
 
          <section class="slide title">
@@ -212,21 +225,21 @@
         </section>
 
         <section class="slide">
-            <h2>Téléverser un fichier CSV</h2>
+            <h1>Téléverser un fichier CSV</h1>
 
             <div class="col col--one-half">
                 <p>Fichier CSV : « Comma Separated Value » (valeurs séparées par des virgules)</p>
 
                 <ul>
                     <li>Bouton Produits > Importer</li>
-                    <li>Téléversez <b>llc-products.csv</b></li>
+                    <li>Téléversez <code>llc-products.csv</code></li>
                     <li>Consultez l'aperçu : ça marche?</li>
                     <li>Commencez le téléversement</li>
                 </ul>
             </div>
 
             <div class="col col--one-half delayed">
-                <img class="" src="framework/img/workshop/waiting.gif">
+                <img class="" src="framework/img/workshop/waiting.gif" alt="">
                 <br>
                 <p>Le téléversement prendra quelques minutes. Vous pouvez fermer la fenêtre qui vient de s'afficher.</p>
                 <p>Rafraîchissez la page pour commencer.</p>
@@ -234,7 +247,8 @@
         </section>
 
         <section class="slide title">
-            <img src="framework/img/workshop/product-page-overview.png" class="center">
+          <h1 class="sr-only">Page produit</h1>
+            <img src="framework/img/workshop/product-page-overview.png" class="center" alt="Page produit avec les détails du formulaire remplis. Afficher le contrôle du produit est mis en surbrillance.">
         </section>
 
         <section class="slide title">
@@ -243,12 +257,12 @@
         </section>
 
         <section class="slide title">
-            <img src="framework/img/workshop/onlinestore-themes.png" class="center">
-
+          <h1 class="sr-only">Page thématique</h1>
+            <img src="framework/img/workshop/onlinestore-themes.png" class="center" alt="Page de thème présentant la section Thème actuel avec des commandes pour modifier et personnaliser. La section Plus de thèmes avec un lien vers la boutique de thèmes est ci-dessous.">
         </section>
 
         <section class="slide">
-            <h2>Ajouter des thèmes à une boutique</h2>
+            <h1>Ajouter des thèmes à une boutique</h1>
 
             <p>Une boutique peut avoir <i>plusieurs</i> thèmes.</p>
             <p>Le thème est le « costume » de votre boutique. Vous pouvez lui faire porter le costume que vous souhaitez!</p>
@@ -256,9 +270,9 @@
         </section>
 
         <section class="slide">
-            <h2>Téléverser un thème</h2>
+            <h1>Téléverser un thème</h1>
 
-            <img src="framework/img/workshop/upload-a-theme.png" alt="Où trouver le bouton de téléversement" class="center">
+            <img src="framework/img/workshop/upload-a-theme.png" alt="" class="center">
 
             <ul>
                 <li>Cliquez sur « Mettre en ligne le thème » (Upload theme)</li>
@@ -268,20 +282,20 @@
         </section>
 
         <section class="slide">
-            <h2>Thème non publié</h2>
+            <h1>Thème non publié</h1>
             <br>
-            <img src="framework/img/workshop/unpublished-theme.png" class="center w66">
+            <img src="framework/img/workshop/unpublished-theme.png" class="center w66" alt="Liste des thèmes. Chacun comporte un contrôle Action et Personnaliser.">
             <br>
             <p>Vous pouvez <b>personnaliser</b> votre thème en utilisant l'éditeur de boutique en ligne.</p>
         </section>
 
         <section class="slide">
-            <br>
-            <img src="framework/img/workshop/editor-screen.png" class="center">
+            <h1 class="sr-only">Theme editor</h1>
+            <img src="framework/img/workshop/editor-screen.png" class="center" alt="Écran de l'éditeur de thème avec navigation dans la barre latérale et vue en direct de la page en cours de modification.">
         </section>
 
         <section class="slide">
-          <h2>Paramètres de thème</h2>
+          <h1>Paramètres de thème</h1>
           <div class="row">
             <div class="col col--two-thirds">
               <p>Exemples de paramètres de thème :</p>
@@ -294,13 +308,13 @@
               <p>Vous pouvez afficher toutes les options dans la <a href="https://help.shopify.com/themes/development/storefront-editor/settings-schema">documentation en ligne</a>.</p>
            </div>
            <div class="col col--one-third">
-             <img class="w75" src="framework/img/workshop/header-theme-settings.png">
+             <img class="w75" src="framework/img/workshop/header-theme-settings.png" alt="">
            </div>
          </div>
         </section>
 
         <section class="slide">
-            <h2>Exercice n° 1 : Explorer le thème</h2>
+            <h1>Exercice n° 1 : Explorer le thème</h1>
 
             <ul>
                 <li>Pour l'en-tête, téléversez votre logo si vous en avez un ou sélectionnez un des logos dans le dossier <code>images</code>.</li>
@@ -314,7 +328,7 @@
 
         <section class="slide centered">
             <br>
-            <img src="framework/img/workshop/thumbs-up-robot.gif">
+            <img src="framework/img/workshop/thumbs-up-robot.gif" alt="Un robot avec un appendice à tige métallique dit: 'Vous ne pouvez pas le dire, mais je vous donne un coup de pouce.'">
         </section>
 
         <section class="slide title">
@@ -323,7 +337,7 @@
         </section>
 
         <section class="slide">
-            <h2>Gérer les collections de la boutique</h2>
+            <h1>Gérer les collections de la boutique</h1>
 
             <p>Ajoutons quelques produits à la collection de la page d'accueil.</p>
 
@@ -332,11 +346,11 @@
               <li>Ajoutez 5 autres produits manuellement à la collection.</li>
             </ul>
             <br>
-            <img src="framework/img/workshop/manual-add.png" alt="Ajouter des produits manuellement" class="center w66">
+            <img src="framework/img/workshop/manual-add.png" alt="Entrée de recherche de produit avec le bouton Parcourir en surbrillance." class="center w66">
         </section>
 
         <section class="slide">
-            <h2>Créer une nouvelle collection</h2>
+            <h1>Créer une nouvelle collection</h1>
             <p>Collections > bouton « Créer une collection »</p>
 
             <div class="delayed">
@@ -345,13 +359,13 @@
                 <li>Conditions : Product type == Earrings</li>
             </ul>
 
-            <img src="framework/img/workshop/earrings-conditions.png" alt="Conditions de la collection Earrings" class="center w66">
+            <img src="framework/img/workshop/earrings-conditions.png" alt="Paramètres des conditions de collecte: les produits doivent correspondre à toutes les conditions, le type de produit est égal à boucles d'oreilles." class="center w66">
 
             </div>
         </section>
 
         <section class="slide">
-            <h2>Collections conditionnelles</h2>
+            <h1>Collections conditionnelles</h1>
 
             <ul>
                 <li>Titre : <b>Necklaces</b></li>
@@ -365,7 +379,7 @@
         </section>
 
         <section class="slide">
-            <h2>Collections à multiples conditions</h2>
+            <h1>Collections à multiples conditions</h1>
 
             <div class="col col--one-half"</div>
               <p>Titre : <b>Household</b> (Maison)</p>
@@ -374,7 +388,7 @@
             </div>
 
             <div class="col col--one-half"</div>
-              <img src="framework/img/workshop/multiple-conditions.png" class="center">
+              <img src="framework/img/workshop/multiple-conditions.png" class="center" alt="Paramètres des conditions de collecte: les produits doivent correspondre à toutes les conditions, le type de produit est égal à abat-jour, le type de produit est égal à bols en céramique, le type de produit est égal à oreillers.">
             </div>
         </section>
 
@@ -383,7 +397,7 @@
         </section>
 
         <section class="slide">
-          <h2>Créer des pages</h2>
+          <h1>Créer des pages</h1>
 
           <p>Allez à Boutique en ligne > Pages</p>
 
@@ -400,7 +414,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis semper congue lacu
         <section class="slide">
             <p><b>Truc de pro :</b> il est possible que vous ayez copié et collé du code superflu. Vous pouvez effacer ce code. Nous regarderons d’autres exemples de code comme celui-ci plus tard!</p>
             <br>
-            <img src="framework/img/workshop/rte-code.png" class="center w66">
+            <img src="framework/img/workshop/rte-code.png" class="center w66" alt="Détails de la page, le bouton «code» de l'éditeur de contenu est mis en surbrillance. Le contenu comprend du code HTML supplémentaire.">
 
         </section>
         <section class="slide title">
@@ -409,35 +423,35 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis semper congue lacu
         </section>
 
         <section class="slide">
-            <h2>Ajouter des éléments de menu</h2>
+            <h1>Ajouter des éléments de menu</h1>
             <p>Nous venons de créer des collections et des pages, mais elles ne s'affichent pas encore dans notre menu. Ajoutons-les à notre page « À propos » et dans un <a href="https://docs.shopify.com/manual/your-website/navigation/create-drop-down-menu">menu déroulant</a> sous Catalogue pour afficher nos collections.</p>
             <br>
-            <img src="framework/img/workshop/catalog-dropdown.png" class="center w66">
+            <img src="framework/img/workshop/catalog-dropdown.png" class="center w66" alt="">
 
         </section>
 
         <section class="slide">
-            <h2>Ajouter un élément à un menu</h2>
+            <h1>Ajouter un élément à un menu</h1>
             <p>Boutique en ligne > Navigation</p>
             <p>Modifiez le <b>Menu principal</b> pour ajouter votre page « À propos ».</p>
-            <img src="framework/img/workshop/add-about-us.png" class="center w66">
+            <img src="framework/img/workshop/add-about-us.png" class="center w66" alt="Section des éléments de menu avec les pages Accueil et À propos de nous. Le contrôle d'ajout d'élément de menu est ci-dessous.">
         </section>
 
 
         <section class="slide">
-            <h2>Créer un menu imbriqué</h2>
+            <h1>Créer un menu imbriqué</h1>
             <div class="col col--one-third">
               <p>Ajoutez un menu Catalogue imbriqué, comme dans l'exemple à droite :</p>
 
               <p>Vous pouvez aussi renommer le catalogue, si vous le souhaitez. Vous trouverez plus d’informations à ce sujet sur la prochaine diapositive.</p>
             </div>
             <div class="col col--two-thirds">
-              <img src="framework/img/workshop/nested-menu.png" class="center ">
+              <img src="framework/img/workshop/nested-menu.png" class="center " alt="La section des éléments de menu comprend désormais un élément de catalogue avec une flèche vers le bas. Les éléments imbriqués comprennent: boucles d'oreilles, ménage, collection Blue Diamond et accessoires.">
             </div>
         </section>
 
         <section class="slide">
-          <h2>Langues</h2>
+          <h1>Langues</h1>
             <p>En écrivant, n’oubliez pas de penser à la langue parlée par votre public cible. Par exemple, vous devez décider si votre site sera en anglais américain ou britannique ou si vous utiliserez des mots seulement utilisés au Canada ou compréhensibles par tous les francophones. <strong>Dans tous les cas, faites preuve de constance.</strong> Si vous changez de style ou de langue d’une section à l'autre, vous risquez de perdre les utilisateurs.
 
             <p>Voici quelques articles à lire sur le style d’écriture, particulièrement sur les différences entre l’anglais américain et britannique :</p>
@@ -449,7 +463,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis semper congue lacu
         </section>
 
         <section class="slide">
-           <h2>Exercice n° 1b : Personnaliser le thème </h2>
+           <h1>Exercice n° 1b : Personnaliser le thème </h1>
 
            <ul>
                <li>Renommez l’en-tête d’infolettre dans le bas de la page en « Abonnez-vous pour rester à jour ».</li>
@@ -458,23 +472,23 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis semper congue lacu
            <div class="delayed">
                <p>Pour changer l’en-tête d’infolettre, vous devez <a href="https://docs.shopify.com/manual/your-website/themes/translate-theme" alt="Modifier la langue du thème">modifier la page Langue du thème</a>.</p>
 
-               <img src="framework/img/workshop/edit-language-link.png" alt="Lien pour modifier la langue" class="center">
+               <img src="framework/img/workshop/edit-language-link.png" alt="Lien pour modifier la langue" class="center" alt="Éditeur de magasin, Sections, le bouton d'action Thème est enfoncé, le contrôle Modifier les langues est mis en surbrillance.">
            </div>
        </section>
 
         <section class="slide">
-            <h2>Éditeur de langue</h2>
+            <h1>Éditeur de langue</h1>
             <p>L'éditeur de langue nous donne un coup de pouce : nous n'avons pas à <em>coder en dur</em> des mots dans le code du thème.</p>
             <p><b>Truc de pro </b>: comme il y a beaucoup de mots, utilisez la fonction de recherche pour trouver « newsletter » (« infolettre »).<br />
-              Essayez les raccourcis de clavier <code>ctrl</code> ou <code>cmd</code> + <code>f</code>.</p>
+              Essayez les raccourcis de clavier <kbd>ctrl</kbd> ou <kbd>cmd</kbd> + <kbd>f</kbd>.</p>
             <br>
-            <img src="framework/img/workshop/edit-language.png" class="center w50">
+            <img src="framework/img/workshop/edit-language.png" class="center w50" alt="Éditeur de langue avec des étiquettes et des zones de saisie pour chaque chaîne de texte.">
         </section>
 
         <section class="slide">
           <h2>Coder en dur?</h2>
           <p>Prenons une petite pause pour aborder quelques notions de HTML.</p>
-          <img class="center" src="framework/img/workshop/huh.gif" alt="gif démontrant un état de confusion" />
+          <img class="center" src="framework/img/workshop/huh.gif" alt="" />
         </section>
 
         <section class="slide title">
@@ -483,28 +497,29 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis semper congue lacu
         </section>
 
         <section class="slide">
-          <h2>HTML</h2>
+          <h1>HTML</h1>
           <p>Le HTML est un langage de balisage. Il s'agit du langage le plus important sur le Web. Il <strong>définit le contenu</strong> d’une page Web.</p>
-          <p>Comme les langues que nous parlons et écrivons, le HTML suit aussi des « règles de grammaire ». Les balises HTML prennent des chevrons vers la gauche < et la droite > et une barre oblique /. Familiarisez-vous avec ces touches!</p>
-          <img src="framework/img/workshop/keyboard-html_fr.jpg" alt="touches utilisées en HTML entourées" class="center no-shadow" width="700">
+          <p>Comme les langues que nous parlons et écrivons, le HTML suit aussi des « règles de grammaire ». Les balises HTML prennent des chevrons vers la gauche <kbd><</kbd> et la droite <kbd>></kbd> et une barre oblique <kbd>/</kbd>. Familiarisez-vous avec ces touches!</p>
+          <img src="framework/img/workshop/keyboard-html_fr.jpg" alt="Clavier avec support coudé gauche, support coudé droit et barre oblique en surbrillance." class="center no-shadow" width="700">
         </section>
 
         <section class="slide" data-markdown>
           <script type="text/template">
-          ##Syntaxe du HTML
+          # Syntaxe du HTML
           Les balises viennent en paires (une balise d’ouverture et une balise de fermeture) et _entourent_ le contenu.  Vous remarquerez que la balise de fermeture prend une barre oblique <code>/</code>.
-          ```xml
+          ```html
           <balise> <-- balise (ouverture)     balise (fermeture) --></balise>
           ```
 
           Les _balises_ HTML décrivent le contenu qui se trouve à l’intérieur pour que le navigateur Web le comprenne.
+          ```html
           <h1>Cette balise indique un en-tête (heading)</h1>
           <p>Cette balise indique un paragraphe.</p>
 
           ```
 
           ---
-          Truc de pro :
+          ## Truc de pro :
           Les _balises_ HTML sont souvent appelées des « éléments ».
 
         </script>
@@ -512,22 +527,22 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis semper congue lacu
 
         <section class="slide" data-markdown>
           <script type="text/template">
-            ##Imbriquer des balises HTML
+            # Imbriquer des balises HTML
 
             Lorsque des balises HTML sont imbriquées, cela crée une hiérarchie familiale : il y a des ancêtres, des parents, des enfants, des sœurs, etc.
 
-            ```
+            ```html
             <parent>
               <enfant></enfant>
             </parent>
             ```
-            En imbriquant des balises, faites une indentation pour faciliter la lecture du code. Indentez le code avec la touche « Tab » du clavier.
+            En imbriquant des balises, faites une indentation pour faciliter la lecture du code. Indentez le code avec la touche <kbd>Tab</kbd> du clavier.
           </script>
         </section>
 
         <section class="slide" data-markdown>
           <script type="text/template">
-            ##ATTRIBUTS
+            # ATTRIBUTS
 
             * Ils fournissent des informations ou des consignes supplémentaires à l’élément.
             * Ils se trouvent à l’intérieur de la balise HTML d’ouverture.
@@ -535,20 +550,20 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis semper congue lacu
             * Il y a beaucoup d'attributs différents.
 
 
-            ```xml
+            ```html
             <attribut de balise="valeur">contenu</tag>
             ```
           </script>
         </section>
 
         <section class="slide">
-            <h2>Qu'est-ce que du code « figé » ou « codé en dur »?</h2>
+            <h1>Qu'est-ce que du code « figé » ou « codé en dur »?</h1>
             <p>Du texte écrit explicitement dans le HTML est considéré comme « figé » ou « <b>codé en dur</b> ».  Cela signifie qu'il ne peut être modifié que par
               quelqu'un qui a accès aux fichiers du site et qui a des connaissances en programmation.</p>
 
             <div class="delayed">
-                <h3>HTML</h3>
-                <pre><code class="hljs xml">
+                <h2>HTML</h2>
+                <pre><code class="hljs html">
 &lt;h1&gt;Bottes poilues&lt;/h1&gt;
 &lt;h3&gt;139,99 $&lt;/h3&gt;
 &lt;p&gt;Ces bottes vous garderont au chaud tout l'hiver. Elles sont super!&lt;/p&gt;
@@ -557,22 +572,22 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis semper congue lacu
         </section>
 
         <section class="slide">
-            <h2>Quelle est l'utilité de Liquid?</h2>
+            <h1>Quelle est l'utilité de Liquid?</h1>
             <p>Plutôt que d'écrire explicitement ce que nous voulons, nous pouvons faire référence à un <b><a href="https://docs.shopify.com/themes/liquid-documentation/objects">objet Liquid</a></b>.</p>
 
             <p>Les objets Liquid affichent de manière dynamique la valeur d'un attribut (p. ex., titre, prix, etc.) entre des <b>accolades</b> :  <code>{{</code> ... <code>}}</code></p>
 
             <div class="">
-                <h3>Liquid</h3>
-                <pre><code class="hljs xml">
+                <h2>Liquid</h2>
+                <pre><code class="hljs html">
 &lt;h1&gt;{{ product.title }}&lt;/h1&gt;
 &lt;p&gt;{{ product.description }}&lt;/p&gt;
                 </code></pre>
             </div>
 
             <div class="">
-                <h3>Retour au HTML</h3>
-                <pre><code class="hljs xml">
+                <h2>Retour au HTML</h2>
+                <pre><code class="hljs html">
 &lt;h1&gt;Planche à fromage en bois, déco coq&lt;/h1&gt;
 &lt;p&gt;Cette planche à fromage en grain de bois avec décoration de coq est magnifique.
 Elle est idéale pour les collectionneurs d'objets à l'effigie de coqs ou pour ceux cherchant à ajouter une touche de style country ou rustique à leur décor.&lt;/p&gt;
@@ -581,50 +596,50 @@ Elle est idéale pour les collectionneurs d'objets à l'effigie de coqs ou pour 
         </section>
 
         <section class="slide title">
-            <h2>Du code pour vous, durant votre absence.</h2>
+            <h1>Du code pour vous, durant votre absence.</h1>
             <br>
             <h2 class="delayed">Ou pour vous dans l'avenir.</h2>
         </section>
 
         <section class="slide">
-            <h2>Exercice n° 3 : ruiner le code, par exprès</h2>
+            <h1>Exercice n° 3 : ruiner le code, par exprès</h1>
 
-            <ul>
+            <ol>
                 <li>Dans l'éditeur de thème, cliquez sur le menu « Actions du thème » et sélectionnez « Modifier le code ».</li>
-                <li>Trouvez <b>theme.liquid</b> dans le dossier Layout (« disposition »).</li>
-                <li>Effacez tout ce qui se trouve <u>en haut</u> de <code>{{ content_for_header }}</code>.</li>
-                <li>Enregistrez votre travail et affichez l'<b>aperçu</b>.</li>
-            </ul>
+                <li>Trouvez <code>theme.liquid</code> dans le dossier Layout (« disposition »).</li>
+                <li>Effacez tout ce qui se trouve <strong>en haut</strong> de <code>{{ content_for_header }}</code>.</li>
+                <li>Enregistrez votre travail et affichez l'aperçu.</li>
+            </ol>
 
-            <img src="framework/img/workshop/break-1.png" class="center w75">
+            <img src="framework/img/workshop/break-1.png" class="center w75" alt="">
         </section>
 
         <section class="slide beaker-panic bg--image">
-
+          <h1 class="sr-only">Pas de panique.</h1>
         </section>
 
         <section class="slide">
-            <h2>Charger une version précédente</h2>
+            <h1>Charger une version précédente</h1>
             <p>Si vous ne pouvez pas annuler un changement, vous pouvez quand même charger une <b>ancienne version</b>.</p>
-            <img src="framework/img/workshop/older-versions.png" class="center">
+            <img src="framework/img/workshop/older-versions.png" class="center" alt="Éditeur de code de thème, le contrôle des anciennes versions est mis en évidence.">
             <br>
-            <p><b>Truc de pro :</b> le raccourci de clavier pour annuler est Cmd+Z (Mac) ou Ctrl+Z (Windows).</p>
+            <p><b>Truc de pro :</b> le raccourci de clavier pour annuler est <kbd>Cmd</kbd>+<kbd>Z</kbd> (Mac) ou <kbd>Ctrl</kbd>+<kbd>Z</kbd> (Windows).</p>
 
         </section>
 
         <section class="slide">
-            <h2>Ruinez le code une autre fois!</h2>
+            <h1>Ruinez le code une autre fois!</h1>
 
             <p class="">Attention! Il n'y a pas d'<em>anciennes versions</em> dans le dossier des médias (assets)!</p>
 
             <ul>
-                <li>Allez dans le dossier Assets du thème Debut et ouvrez <b>theme.scss.liquid</b>.</li>
+                <li>Allez dans le dossier Assets du thème Debut et ouvrez <code>theme.scss.liquid</code>.</li>
                 <li>Tapez « Qu'est-ce qui pourrait mal tourner? » n'importe où dans le code.</li>
                 <li>Enregistrez votre travail et affichez l'<b>aperçu</b>.</li>
             </ul>
 
              <div class="">
-                <h3>theme.scss.liquid</h3>
+                <h2>theme.scss.liquid</h2>
                 <pre><code class="hljs css">
 Qu'est-ce qui pourrait mal tourner?/*============================================================================
   Debut | Built with Shopify Slate
@@ -636,14 +651,14 @@ Qu'est-ce qui pourrait mal tourner?/*===========================================
         </section>
 
         <section class="slide">
-            <h2>Ruinez le code intelligemment</h2>
+            <h1>Ruinez le code intelligemment</h1>
 
             <ul>
                 <li>Créez une version <b>dupliquée</b> du thème à partir du tableau de bord des thèmes.</li>
                 <li>Consultez les paramètres de ce nouveau thème dans l'éditeur de boutique en ligne. Ils sont identiques!</li>
             </ul>
 
-            <img src="framework/img/workshop/how-to-duplicate.png" class="center w50">
+            <img src="framework/img/workshop/how-to-duplicate.png" class="center w50" alt="La page du thème, le menu Action est ouvert, le contrôle Duplicate est mis en surbrillance.">
             <br>
             <p><b>Truc de pro </b>: évitez de modifier le code d'un thème de boutique publié. À la place, dupliquez le thème, modifiez le code du thème dupliqué et publiez-le.</p>
         </section>
@@ -654,54 +669,55 @@ Qu'est-ce qui pourrait mal tourner?/*===========================================
         </section>
 
         <section class="slide centered">
+          <h1 class="sr-only">Disposition</h1>
             <img class="contain--img" src="framework/img/workshop/sample-page.png">
         </section>
 
         <section class="slide">
             <div class="col col--one-half">
-              <img class="contain--img" src="framework/img/workshop/sample-page.png">
+              <img class="contain--img" src="framework/img/workshop/sample-page-numbered.png">
             </div>
 
             <div class="col col--one-half">
-                <h2>Quels sont les éléments d'une page?</h2>
-                <div class="delayed">
-                    <p>En-tête (bleu)</p>
-                    <p>Titre de la page (noir)</p>
-                    <p>Description (gris)</p>
-                    <p>Photo du produit (jaune)</p>
-                    <p>Description du produit (gris)</p>
-                    <p>Boutons (vert)</p>
-                    <p>Produits associés (jaune)</p>
-                    <p>Bas de page (bleu)</p>
-                </div>
+                <h1>Quels sont les éléments d'une page?</h1>
+                <ol class="delayed">
+                    <li>En-tête</li>
+                    <li>Titre de la page</li>
+                    <li>Description</li>
+                    <li>Photo du produit</li>
+                    <li>Description du produit</li>
+                    <li>Boutons</li>
+                    <li>Produits associés</li>
+                    <li>Bas de page</li>
+                </ol>
             </div>
         </section>
 
         <section class="slide">
             <div class="col col--one-half">
-                <img src="framework/img/workshop/theme-templates.png" class="center">
+                <img src="framework/img/workshop/theme-templates.png" class="center" alt="">
             </div>
 
             <div class="col col--one-half delayed">
-                <h3>Commençons par :</h3>
+                <h1>Commençons par :</h1>
                 <ul>
-                    <li>theme.liquid</li>
-                    <li>page.liquid</li>
-                    <li>product.liquid</li>
-                    <li>collection.liquid</li>
-                    <li>index.liquid</li>
+                    <li><code>theme.liquid</code></li>
+                    <li><code>page.liquid</code></li>
+                    <li><code>product.liquid</code></li>
+                    <li><code>collection.liquid</code></li>
+                    <li><code>index.liquid</code></li>
                 </ul>
             </div>
         </section>
 
         <section class="slide">
             <div class="col col--one-half">
-              <img class="contain--img" src="framework/img/workshop/sample-page-1.png">
+              <img class="contain--img" src="framework/img/workshop/sample-page-1.png" alt="">
             </div>
 
             <div class="col col--one-half">
-                <h2>Disposition (Layout)</h2>
-                <p><b>theme.liquid</b></p>
+                <h1>Disposition (Layout)</h1>
+                <p><code>theme.liquid</code></p>
                 <div class="delayed">
                     <p>Ceci « entoure » un modèle sur deux.</p>
                     <p>Votre en-tête et votre bas de page s'affichent sur <i>toutes les pages</i>.</p>
@@ -711,49 +727,49 @@ Qu'est-ce qui pourrait mal tourner?/*===========================================
 
         <section class="slide">
             <div class="col col--one-half">
-              <img class="contain--img" src="framework/img/workshop/template-page--header.png">
+              <img class="contain--img" src="framework/img/workshop/template-page--header.png" alt="">
             </div>
 
             <div class="col col--one-half">
-                <h2>L'en-tête (Header)</h2>
-                <p><b>header.liquid</b> : dans le dossier <code>Sections</code></em></p>
-                <div class="delayed">
-                    <p>Votre logo</p>
-                    <p>Liens de navigation du site</p>
-                    <p>Bouton de panier</p>
-                    <p>Boutons de compte</p>
-                    <p>Bannières de promotion</p>
-                    <p>Champ de recherche</p>
-                </div>
+                <h1>L'en-tête (Header)</h1>
+                <p><code>header.liquid</code> : dans le dossier <code>Sections</code></em></p>
+                <ul class="delayed">
+                    <li>Votre logo</li>
+                    <li>Liens de navigation du site</li>
+                    <li>Bouton de panier</li>
+                    <li>Boutons de compte</li>
+                    <li>Bannières de promotion</li>
+                    <li>Champ de recherche</li>
+                </ul>
             </div>
         </section>
 
          <section class="slide">
             <div class="col col--one-half">
-              <img class="contain--img" src="framework/img/workshop/template-page--footer.png">
+              <img class="contain--img" src="framework/img/workshop/template-page--footer.png" alt="">
             </div>
 
             <div class="col col--one-half">
-                <h2>Le bas de page (Footer)</h2>
-                <p><b>footer.liquid</b> : dans le dossier <code>Sections</code></em></p>
-                <div class="delayed">
-                    <p>Listes de liens rapides</p>
-                    <p>Liens et icônes des réseaux sociaux</p>
-                    <p>Inscription à l'infolettre</p>
-                    <p>Champ de recherche</p>
-                    <p>Information sur les droits d'auteur</p>
-                </div>
+                <h1>Le bas de page (Footer)</h1>
+                <p><code>footer.liquid</code> : dans le dossier <code>Sections</code></em></p>
+                <ul class="delayed">
+                    <li>Listes de liens rapides</li>
+                    <li>Liens et icônes des réseaux sociaux</li>
+                    <li>Inscription à l'infolettre</li>
+                    <li>Champ de recherche</li>
+                    <li>Information sur les droits d'auteur</li>
+                </ul>
             </div>
         </section>
 
         <section class="slide">
             <div class="col col--one-half">
-              <img class="contain--img" src="framework/img/workshop/page-page.png">
+              <img class="contain--img" src="framework/img/workshop/page-page.png" alt="">
             </div>
 
             <div class="col col--one-half">
-                <h2>Pages</h2>
-                <p><b>page.liquid</b> : dans le dossier <code>Templates</code></em></p>
+                <h1>Pages</h1>
+                <p><code>page.liquid</code> : dans le dossier <code>Templates</code></em></p>
                 <div class="delayed">
                     <p>Modèle de base pour toutes les pages de votre boutique.</p>
                     <div class="delayed">
@@ -770,13 +786,13 @@ Qu'est-ce qui pourrait mal tourner?/*===========================================
         <section class="slide">
           <div class="row">
             <div class="col col--one-half">
-              <img class="contain--img" src="framework/img/workshop/product-page.png">
+              <img class="contain--img" src="framework/img/workshop/product-page.png" alt="">
             </div>
 
             <div class="col col--one-half">
-                <h2>Produits</h2>
+                <h1>Produits</h1>
                 <div class="delayed">
-                    <p><b>product.liquid</b></p>
+                    <p><code>product.liquid</code></p>
                     <p>Modèle de base pour tous vos produits individuels.</p>
                     <p class="delayed">Dans Debut, il y a une référence à
                       <code>{% section 'product-template' %}</code>
@@ -797,18 +813,18 @@ Qu'est-ce qui pourrait mal tourner?/*===========================================
         </section>
 
         <section class="slide">
-            <h2>Exercice n° 4 : Intro aux objets Liquid</h2>
+            <h1>Exercice n° 4 : Intro aux objets Liquid</h1>
 
             <p>Comment ajouter le <b>type</b> du produit après sa description?</p>
             <p>Nous devons savoir quels <a href="https://docs.shopify.com/themes/liquid-documentation/objects/product">objets Liquid sont disponibles pour les produits</a>.</p>
             <br>
-            <img src="framework/img/workshop/simple-product-type.png" class="center w66">
+            <img src="framework/img/workshop/simple-product-type.png" class="center w66" alt="">
 
         </section>
 
         <section class="slide">
-            <h2>Exercice n° 4c : Intro aux objets Liquid</h2>
-            <h3>product-template.liquid</h3>
+            <h1>Exercice n° 4c : Intro aux objets Liquid</h1>
+            <p>Dans <code>product-template.liquid</code>…</p>
 
             <div class="delayed">
                 <pre><code class="hljs xml">
@@ -821,7 +837,7 @@ Qu'est-ce qui pourrait mal tourner?/*===========================================
         </section>
 
         <section class="slide">
-            <h2>Exercice n° 5 : Intro aux filtres Liquid</h2>
+            <h1>Exercice n° 5 : Intro aux filtres Liquid</h1>
 
             <p>Maintenant, <strong>lions le texte</strong> à une page affichant tous les produits de ce type.</p>
 
@@ -829,8 +845,8 @@ Qu'est-ce qui pourrait mal tourner?/*===========================================
 
             <div class="delayed">
                 <p>Les filtres <b>modifient</b> les éléments auxquels ils sont associés.</p>
-                <h3>Exemple</h3>
-                <pre><code class="hljs xml">
+                <h2>Exemple</h2>
+                <pre><code class="hljs liquid">
 // format: {{ LIQUID_OBJECT.PROPERTY_NAME | FILTER_NAME }}
 {{ product.handle | append: '.png' }}
                 </code></pre>
@@ -847,13 +863,13 @@ Qu'est-ce qui pourrait mal tourner?/*===========================================
         </section>
 
         <section class="slide">
-            <h2>Types de filtres</h2>
+            <h1>Types de filtres</h1>
 
             <p><b><a href="https://docs.shopify.com/themes/liquid-documentation/filters/string-filters">Filtres de chaînes</a></b> : pour modifier les mots, les phrases, les titres et tout ce qui comprend des caractères.</p>
 
             <div class="delayed">
-            <h3>Liquid</h3>
-                <pre><code class="hljs xml">
+            <h2>Liquid</h2>
+                <pre><code class="hljs liquid">
 {{ 'Ça va?' | upcase }}
 {{ product.handle | append: '.png' }}
 {{ article.author | replace: 'Nathan', 'Vinay' | prepend: 'Capt. ' }}
@@ -861,7 +877,7 @@ Qu'est-ce qui pourrait mal tourner?/*===========================================
             </div>
 
             <div class="delayed">
-            <h3>Résultat</h3>
+            <h2>Résultat</h2>
                 <pre><code class="hljs xml">
 ÇA VA?
 bottes-poilues.png
@@ -872,14 +888,14 @@ Capt. Vinay
         </section>
 
         <section class="slide">
-            <h2>Exercice n° 5b : intro aux filtres Liquid</h2>
+            <h1>Exercice n° 5b : intro aux filtres Liquid</h1>
 
             <p>Étape 1 : générer le type de produit avec un appel à l'action.</p>
             <p>Nous coderons en dur le texte autour du type de produit. Pour qu'il s'intègre bien à la phrase, nous l'écrirons en <b>minuscules</b>.</p>
-            <img src="framework/img/workshop/product-with-type.png" class="center w50">
+            <img src="framework/img/workshop/product-with-type.png" class="center w50" alt="Sous la distinction produit, «Voir plus d'emplacements ici».">
             <br>
             <div class="delayed">
-                <pre><code class="hljs xml">
+                <pre><code class="hljs liquid">
 &lt;div class="product-single__description rte" itemprop="description"&gt;
   {{ product.description }}
 &lt;/div&gt;
@@ -889,21 +905,21 @@ Capt. Vinay
         </section>
 
         <section class="slide">
-            <h2>Exercice n° 5c : Intro aux filtres Liquid</h2>
+            <h1>Exercice n° 5c : Intro aux filtres Liquid</h1>
             <p>Étape 2 : le type de produit doit être <b>lié à une page</b> qui comprend tous les produits de ce type.</p>
             <p>Pour faire cela, nous avons besoin du <a href="https://docs.shopify.com/themes/liquid-documentation/filters/url-filters" alt="Filtres d'URL Shopify URL">bon type de filtre d'URL</a>.</p>
             <br>
-            <img src="framework/img/workshop/product-type-link.png" class="center w50">
+            <img src="framework/img/workshop/product-type-link.png" class="center w50" alt="Le mot «emplacements» est maintenant un lien.">
 
         </section>
 
         <section class="slide">
-            <h2>Types de filtres</h2>
+            <h1>Types de filtres</h1>
             <p> Les <b><a href="https://docs.shopify.com/themes/liquid-documentation/filters/url-filters">filtres d'URL</a></b> servent à générer un lien vers un <b>fichier</b> sur Shopify ou une page <b>filtrée</b>.</p>
 
             <div class="">
-            <h3>Liquid</h3>
-                <pre><code class="hljs xml">
+            <h2>Liquid</h2>
+                <pre><code class="hljs liquid">
 {{ 'logo.png' | asset_url }}
 {{ product.vendor | url_for_vendor }}
 {{ "Voir les manteaux" | link_to_tag: 'Jackets' }}
@@ -911,26 +927,26 @@ Capt. Vinay
             </div>
 
             <div class="delayed">
-            <h3>Résultat</h3>
+            <h2>Résultat</h2>
                 <pre><code class="hljs xml">
 //cdn.shopify.com/s/files/1/0087/0462/t/394/assets/logo.png?34423
 /collections/vendors?q=Blue%20Diamond
-&lt;a title=&quot;Afficher les produits ayant la balise Manteaux (Jackets)&quot; href=&quot;/collections/frontpage/jackets&quot;&gt;Voir les manteaux (jackets)&lt;/a&gt;
+&lt;a href=&quot;/collections/frontpage/jackets&quot;&gt;Voir les manteaux (jackets)&lt;/a&gt;
                 </code></pre>
             </div>
         </section>
 
 
         <section class="slide">
-          <h2>Exercice n° 5d : Intro aux filtres Liquid</h2>
-          <h3>Liquid</h3>
-              <pre><code class="hljs xml">
+          <h1>Exercice n° 5d : Intro aux filtres Liquid</h1>
+          <h2>Liquid</h2>
+              <pre><code class="hljs liquid">
 {{ product.type | downcase | link_to_type }}
               </code></pre>
 
-          <h3>HTML</h3>
-              <pre><code class="hljs xml">
-&lt;a href=&quot;/collections/types?q=pillows&quot; title=&quot;pillows&quot;&gt;pillows&lt;/a&gt;
+          <h2>HTML</h2>
+              <pre><code class="hljs html">
+&lt;a href=&quot;/collections/types?q=pillows&quot;&gt;pillows&lt;/a&gt;
               </code></pre>
 
           <p>Essayez-le sur quelques produits!</p>
@@ -938,14 +954,14 @@ Capt. Vinay
         </section>
 
         <section class="slide">
-            <h2>Exercice n° 5e : intro aux filtres Liquid</h2>
+            <h1>Exercice n° 5e : intro aux filtres Liquid</h1>
               <p><b>Bonus</b> : liez l'appel à l'action en entier</p>
               <p>Indice : écrivez la balise <code>&lt;a&gt;</code> vous-même et utilisez un nouveau filtre d'URL.</p>
-              <img src="framework/img/workshop/linked-call-to-action.png" class="center">
+              <img src="framework/img/workshop/linked-call-to-action.png" class="center" alt="">
             <div>
               <div class="delayed">
-                <h3>Liquid</h3>
-                <pre><code class="hljs xml">
+                <h2>Liquid</h2>
+                <pre><code class="hljs html">
   &lt;a href="{{ product.type | url_for_type }}"&gt;
     Voir plus de {{ product.type | downcase }} ici
   &lt;/a&gt;
@@ -956,23 +972,25 @@ Capt. Vinay
 
         <section class="slide">
             <div class="col col--one-half">
-              <img class="contain--img" src="framework/img/workshop/collection-page.png">
+              <img class="contain--img" src="framework/img/workshop/collection-page.png" alt="">
             </div>
 
             <div class="col col--one-half">
-                <h2>Collections</h2>
+                <h1>Collections</h1>
                 <div class="delayed">
-                    <p><b>collection.liquid</b></p>
+                    <p><code>collection.liquid</code></p>
                     <p>Modèle de base pour toutes vos pages de collection.</p>
                     <p>Dans le thème Debut, il y a une référence à
                       <code>{% section 'collection-template' %}</code>.</p>
 
                     <div class="delayed">
-                        <p><b>Qu'est-ce que l'on pourrait trouver dans collection-template.liquid?</b></p>
-                        <p>Titre de la collection</p>
-                        <p>Description de la collection</p>
-                        <p>Photos de produit</p>
-                        <p>Prix des produits et autres informations</p>
+                        <p><b>Qu'est-ce que l'on pourrait trouver dans <code>collection-template.liquid</code>?</b></p>
+                        <ul>
+                          <li>Titre de la collection</li>
+                          <li>Description de la collection</li>
+                          <li>Photos de produit</li>
+                          <li>Prix des produits et autres informations</li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -980,16 +998,16 @@ Capt. Vinay
 
         <section class="slide">
             <div class="col col--one-half">
-                <h2>Exercice n° 6 : Images de premier plan de pages de collection</h2>
+                <h1>Exercice n° 6 : Images de premier plan de pages de collection</h1>
                 <p>Après avoir regardé quels objets Liquid <a href="https://docs.shopify.com/themes/liquid-documentation/objects/collection">sont disponibles pour les collections</a>, affichez une image de premier plan (hero) en haut des pages de collection.</p>
             </div>
             <div class="col col--one-half">
-                <img src="framework/img/workshop/hero-collection.png" class="contain--img">
+                <img src="framework/img/workshop/hero-collection.png" class="contain--img" alt="Page de collection avec grande image de fond de bijoux en diamant. Le texte au-dessus se lit, «La collection Blue Diamond».">
             </div>
         </section>
 
         <section class="slide">
-            <h2>Téléverser des images de premier plan pour les collections</h2>
+            <h1>Téléverser des images de premier plan pour les collections</h1>
             <p>Revenez aux collections et téléversez les fichiers suivants comme images de premier plan. N'oubliez pas de cliquer sur le bouton après avoir téléversé votre image avant de passer à la prochaine collection.</p>
 
             <ul>
@@ -997,15 +1015,15 @@ Capt. Vinay
                 <li>Accessoires : <code>collection-accessories.jpg</code></li>
             </ul>
 
-            <img src="framework/img/workshop/featured-collection-image.png" class="center w66">
+            <img src="framework/img/workshop/featured-collection-image.png" class="center w66" alt="Modifier la page de collection avec le bouton «Télécharger l'image» en surbrillance.">
         </section>
 
         <section class="slide">
-          <h2>Exercice n° 6 : Images de premier plan pour la page de collection</h2>
+          <h1>Exercice n° 6 : Images de premier plan pour la page de collection</h1>
           <p>Revenons à l'éditeur de code, s'il n'est pas déjà ouvert. À partir de la section Boutique en ligne > Thèmes, cliquez sur le bouton « Personnaliser » à droite. Puis, sélectionnez Actions du thème > Modifier le code.</p>
           <p>Sous la balise <code>&lt;/header&gt;</code> dans notre modèle de collection, ajoutez le code HTML suivant :</p>
             <div class="">
-                <h3>collection-template.liquid</h3>
+                <p><code>collection-template.liquid</code></p>
                 <pre><code class="hljs xml">
 &lt;div class="collection-hero">
   &lt;div class="collection-hero__image" style="background-image: url({{ collection.image | img_url: '1024x300', crop: 'top' }});">&lt;/div>
@@ -1028,53 +1046,56 @@ Capt. Vinay
         </section>
 
         <section class="slide">
-          <h2>INTRODUCTION AU CSS</h2>
+          <h1>INTRODUCTION AU CSS</h1>
           <p>Les navigateurs appliquent des styles par défaut pour certaines balises HTML, comme le texte en gras pour les en-têtes et les espaces entre les paragraphes.</p>
 
-          <p>Le <strong>HTML</strong> est utilisé pour définir le <strong>sens</strong> du contenu.</p>
-
-          <p>Le <strong>CSS</strong> définit la <strong>présentation</strong> d'un site Web. Il s'agit du langage utilisé pour mettre le style du site Web à notre goût!</p>
+          <dl>
+            <dt>Le <strong>HTML</strong><dt><dd>est utilisé pour définir le <strong>sens</strong> du contenu.</dd>
+            <dt>Le <strong>CSS</strong></dt><dd>définit la <strong>présentation</strong> d'un site Web. Il s'agit du langage utilisé pour mettre le style du site Web à notre goût!</dd>
+          </dl>
         </section>
 
         <section class="slide" data-markdown>
           <script type="text/template">
-          ##Syntaxe du CSS
+          #Syntaxe du CSS
 
-          <pre><code>propriété: valeur;</code></pre>
+          <pre><code class="hljs css">propriété: valeur;</code></pre>
 
-          <p>Les <strong>propriétés</strong> déterminent le type de style à appliquer à l’élément. Elles sont suivies d'un deux-points « : ».</p>
-
-          <p>Les <strong>valeurs</strong> appartiennent à la propriété et se terminent par un point-virgule « ; » pour indiquer la fin de la consigne.</p>
+          <dl>
+            <dt>Les <strong>propriétés</strong></dt><dd>déterminent le type de style à appliquer à l’élément. Elles sont suivies d'un deux-points « : ».</dd>
+            <dt>Les <strong>valeurs</strong></dt><dd>appartiennent à la propriété et se terminent par un point-virgule « ; » pour indiquer la fin de la consigne.</dd>
+          </dl>
 
           <p>Dans l'exemple de la diapositive que nous venons de voir, une image était utilisée comme arrière-plan.</p>
 
-          <pre><code>background: red;</code></pre>
+          <pre><code class="hljs css">background: red;</code></pre>
 
           <p>Afin d'afficher une image en arrière-plan, vous devez écrire l'adresse URL entre parenthèses :</p>
 
-          <pre><code>background: url(https://monsite.com/images/arriereplan.jpg);</code></pre>
+          <pre><code class="hljs css">background: url(https://monsite.com/images/arriereplan.jpg);</code></pre>
 
         </script>
         </section>
 
         <section class="slide" data-markdown>
           <script type="text/template">
-            <h2>Syntaxe du CSS</h2>
+            <h1>Syntaxe du CSS</h1>
 
             <p>Dans le code utilisé dans l'attribut <code>style=""</code>, il y a cette balise Liquid :</p>
 
-            <pre><code>background-image: url({{ collection.image | img_url: '1024x300', crop: 'top' }});</code></pre>
+            <pre><code class="hljs css">background-image: url({{ collection.image | img_url: '1024x300', crop: 'top' }});</code></pre>
 
             <p><br>Cela vérifie dans Shopify si une image a été téléversée pour la collection. Cette image sera redimensionnée à la taille indiquée. Toutefois, que se passe-t-il si une image n'a pas été téléversée pour la collection?</p>
           </script>
         </section>
 
         <section class="slide">
+          <h1 class="visuallyhidden">Collections sans image</h1>
             <div class="row row--one-half text-center">
-                <img src="framework/img/workshop/earrings-fullscreen.png" alt="Boucles d'oreilles, plein écran">
+                <img src="framework/img/workshop/earrings-fullscreen.png" alt="La collection de boucles d'oreilles présente une image d'arrière-plan téléchargée.">
             </div>
             <div class="row row--one-half delayed text-center">
-                <img src="framework/img/workshop/no-image-fullscreen.png" alt="Household, plein écran">
+                <img src="framework/img/workshop/no-image-fullscreen.png" alt="La collection des ménages comporte une section grise où l'image d'arrière-plan devrait être.">
             </div>
         </section>
 
@@ -1084,13 +1105,13 @@ Capt. Vinay
         </section>
 
         <section class="slide">
-            <h2>Exercice n° 6c : Afficher l'image de premier plan, s'il y en a une</h2>
+            <h1>Exercice n° 6c : Afficher l'image de premier plan, s'il y en a une</h1>
 
             <p>Nous pouvons utiliser les balises <a href="https://docs.shopify.com/themes/liquid-documentation/tags/control-flow-tags" alt="balises Control Flow">Control Flow</a> pour vérifier <b>s'i</b>l y a une image de premier plan.</p>
             <p>Les <b>balises</b> Liquid sont utilisées pour programmer des éléments logiques. Les balises ressemblent à ceci : <code>{%</code> ... <code>%}</code> </p>
 
             <div class="delayed">
-                <h3>Pseudocode</h3>
+                <h2>Pseudocode</h2>
                 <pre><code class="hljs xml">
 {% if collection_image_exists %}
     Afficher l'image de premier plan
@@ -1103,7 +1124,7 @@ Capt. Vinay
         </section>
 
         <section class="slide">
-          <h2>Expressions conditionnelles (if)</h2>
+          <h1>Expressions conditionnelles (if)</h1>
           <p>Une expression conditionnelle ne fait une action que <i>si</i> une <b>condition</b> est vraie.</p>
           <pre><code class="hljs xml">
 {% if <span class="keyword">une condition est vraie</span> %}
@@ -1126,7 +1147,7 @@ Capt. Vinay
         </section>
 
         <section class="slide">
-            <h2>Exercice n° 6d : Afficher les images de premier plan, s'il y en a</h2>
+            <h1>Exercice n° 6d : Afficher les images de premier plan, s'il y en a</h1>
 
             <p>Créons une expression conditionnelle pour vérifier s'il y a une image de premier plan.</p>
 
@@ -1140,7 +1161,7 @@ Capt. Vinay
 
             <div class="delayed">
               <p>Réponse : <code>{% if collection.image %}</code></p>
-                <pre><code class="hljs xml">
+                <pre><code class="hljs liquid">
 {% if collection.image %}
     Afficher l'image de premier plan
 {% endif %}
@@ -1150,11 +1171,11 @@ Capt. Vinay
         </section>
 
         <section class="slide">
-            <h2>Exercice n° 6d : Afficher les images de premier plan, s'il y en a</h2>
+            <h1>Exercice n° 6d : Afficher les images de premier plan, s'il y en a</h1>
 
             <p>Mettons toutes les pièces du code ensemble! N'oubliez pas de mettre le code après la balise de fermeture <code>&lt;/header&gt;</code> :</p>
 
-            <pre><code>
+            <pre><code class="hljs html">
 {% if collection.image %}
   &lt;div class="collection-hero"&gt;
     &lt;div class="collection-hero__image" style="background-image: url({{ collection.image | img_url: '1024x300', crop: 'top' }});"&gt;&lt;/div&gt;
@@ -1169,21 +1190,21 @@ Capt. Vinay
         </section>
 
         <section class="slide">
-            <h2>Afficher un code de réduction</h2>
+            <h1>Afficher un code de réduction</h1>
 
             <p>Comment afficher un code de réduction sur une page de produit <b>si</b> le produit fait partie d'une collection précise (dans ce cas-ci, la collection <b>Household</b>)?</p>
 
-            <ul class="delayed">
+            <ol class="delayed">
                 <li>Créez un <a href="https://docs.shopify.com/manual/your-store/discounts" alt="codes de réduction">code de réduction</a> qui ne fonctionnera que pour les produits de la collection Household.</li>
-                <li>Modifiez <b>product-template.liquid</b> pour afficher le code dans une expression conditionnelle.</li>
-            </ul>
+                <li>Modifiez <code>product-template.liquid</code> pour afficher le code dans une expression conditionnelle.</li>
+            </ol>
 
-            <img src="framework/img/workshop/discount-example.png" class="center delayed w75">
+            <img src="framework/img/workshop/discount-example.png" class="center delayed w75" alt="La page produit de l'oreiller présente un message, «Entrez home4holidays à la caisse pour 20% de réduction sur cet article.»">
 
         </section>
 
         <section class="slide">
-            <h2>Créer un code de réduction</h2>
+            <h1>Créer un code de réduction</h1>
 
             <ul>
                 <li>Code : <code>home4holidays</code></li>
@@ -1191,15 +1212,15 @@ Capt. Vinay
                 <li>S'applique aux : produits de la collection <code>Household</code></li>
                 <li>Facultatif : indiquez une date de début et de fin si vous souhaitez que le code expire après les fêtes, par exemple.</li>
             </ul>
-            <img src="framework/img/workshop/new-discount-code.png" class="center w75">
+            <img src="framework/img/workshop/new-discount-code.png" class="center w75" alt="">
 
         </section>
 
         <section class="slide">
-            <h2>Balises d'itération</h2>
+            <h1>Balises d'itération</h1>
             <p>Maintenant, nous souhaitons afficher ce code de réduction sur tous les produits qui font partie de cette collection. Comme un produit peut faire partie de plusieurs collections, vérifions d'abord quel est le nom de la collection à laquelle ce produit appartient.</p>
             <p>Nous pouvons utiliser une <a href="https://docs.shopify.com/themes/liquid-documentation/tags/iteration-tags#for" alt="Balise d'itération">balise d'itération</a> pour consulter les collections en boucle :</p>
-            <h3>Pseudocode</h3>
+            <h2>Pseudocode</h2>
             <pre><code class="hljs xml">
 {% for each collection in collections %}
 
@@ -1212,15 +1233,15 @@ Capt. Vinay
 
         </section>
         <section class="slide">
-            <h2>À la découverte de la boucle « for »</h2>
+            <h1>À la découverte de la boucle « for »</h1>
 
             <p>Une <strong>boucle</strong> est la répétition d'une instruction jusqu'à ce qu'une tâche soit complètement exécutée. Pensez à un évier rempli de verres à nettoyer : vous répéterez les mêmes actions pour chaque verre jusqu'à ce qu'il n'y ait plus de verres dans l'évier. En fait, vous faites une boucle!</p>
 
-            <img src="framework/img/workshop/loop.gif" alt="jeu d'arcade de basketball" class="center">
+            <img src="framework/img/workshop/loop.gif" alt="" class="center">
         </section>
 
         <section class="slide">
-            <h2>À la découverte de la boucle « for »</h2>
+            <h1>À la découverte de la boucle « for »</h1>
 
             <p>Créons une <a href="https://docs.shopify.com/themes/liquid-documentation/tags/iteration-tags#for" alt="boucles « for » en Liquid">boucle « for »</a> basée sur notre pseudocode.</p>
 
@@ -1233,7 +1254,7 @@ Capt. Vinay
         </section>
 
         <section class="slide">
-            <h2>À la découverte de la boucle « for »</h2>
+            <h1>À la découverte de la boucle « for »</h1>
 
             <p>Quelle <a href="https://docs.shopify.com/themes/liquid-documentation/objects/collection">propriété de collection</a> le titre indique-t-il?</p>
 
@@ -1245,7 +1266,7 @@ Capt. Vinay
             <div class="delayed">
               <p>Réponse : <code>==</code></p>
             </div>
-            <pre class="delayed"><code class="hljs">
+            <pre class="delayed"><code class="hljs liquid">
 {% for collection in product.collections %}
   {% if collection.title == 'Household' %}
     Afficher le code de réduction.
@@ -1255,11 +1276,11 @@ Capt. Vinay
         </section>
 
         <section class="slide">
-            <h2>Exercice n° 7 : Afficher un code de réduction</h2>
-            <h3>product-template.liquid</h3>
+            <h1>Exercice n° 7 : Afficher un code de réduction</h1>
+            <p><code>product-template.liquid</code></p>
 
             <p>Placez la boucle « for » sous le titre du produit (après la balise <code>&lt;h1&gt;</code>).</p>
-            <pre><code class="hljs">
+            <pre><code class="hljs html">
 {% for collection in product.collections %}
   {% if collection.title == 'Household' %}
     &lt;div class="special-discount"&gt;
@@ -1273,14 +1294,14 @@ Capt. Vinay
         </section>
 
         <section class="slide">
-            <h2>Exercice n° 7c : Afficher un code de réduction</h2>
+            <h1>Exercice n° 7c : Afficher un code de réduction</h1>
             <p>Ces attributs de <code>classe</code> sont utilisés en CSS pour appliquer les styles au code de réduction. Le CSS applique un arrière-plan vert, modifie la police de texte et ajoute un espacement.</p>
 
             <div class="row row--one-half text-center">
-                <img src="framework/img/workshop/show-discount.png">
+                <img src="framework/img/workshop/show-discount.png" alt="Page de produit d'oreiller, avis de code de réduction disponible, texte blanc avec fond vert.">
             </div>
             <div class="row row--one-half text-center">
-                <img src="framework/img/workshop/hide-discount.png">
+                <img src="framework/img/workshop/hide-discount.png" alt="Page de produit de bijouterie, l'avis de remise est caché.">
             </div>
         </section>
 
@@ -1290,13 +1311,13 @@ Capt. Vinay
         </section>
 
         <section class="slide">
-            <h2>Exercice n° 9 : Limiter une boucle</h2>
+            <h1>Exercice n° 9 : Limiter une boucle</h1>
             <p>Si vous croyez qu'il y a trop (ou pas assez) de produits sur votre page d'accueil, il y a une solution.</p>
 
             <p>Quel fichier de modèle modifie ce qui se trouve sur la page d'accueil?</p>
 
             <div class="delayed">
-              <p>Réponse : <b>index.liquid</b></p>
+              <p>Réponse : <code>index.liquid</code></p>
               <hr>
             </div>
             <div class="delayed">
@@ -1310,16 +1331,16 @@ Capt. Vinay
         </section>
 
         <section class="slide">
-            <h2>Balises de thème</h2>
+            <h1>Balises de thème</h1>
 
-            <h3>index.liquid</h3>
+            <p><code>index.liquid</code></p>
             <p>Il n'y a pas grand chose à voir...</p>
 
-            <img src="framework/img/workshop/fooled-me.gif" class="w50 center">
+            <img src="framework/img/workshop/fooled-me.gif" class="w50 center" alt="Butler crie à un homme qui est au lit: «Tu m'as trompé!»">
         </section>
 
         <section class="slide">
-            <h2>Balises de thème</h2>
+            <h1>Balises de thème</h1>
 
             <p>Ce fichier comprend du code, <code>{{ content_for_index }}</code>, qui injecte des sections de la page d'accueil.</p>
 
@@ -1328,24 +1349,24 @@ Capt. Vinay
             <p>Nous utilisons <code>include</code> pour ajouter des parties d'autres fichiers dans les modèles.</p>
 
             <div class="delayed">
-              <h3>collection-template.liquid</h3>
-              <pre><code class="hljs">
+              <p><code>collection-template.liquid</code></p>
+              <pre><code class="hljs liquid">
 {% if paginate.pages > 1 %}  // s'il y a assez de produits pour créer plusieurs pages
   {% include 'pagination' %} // afficher les boutons de pagination
 {% endif %}
               </code></pre>
-              <img src="framework/img/workshop/pagination-highlight.png" class="center">
+              <img src="framework/img/workshop/pagination-highlight.png" class="center" alt="Contrôles de pagination avec du texte au centre, «Page 1 sur 7.»">
             </div>
         </section>
 
         <section class="slide">
-            <h2>Balises de thème</h2>
+            <h1>Balises de thème</h1>
             <p>Voyons voir s'il est possible de déterminer l'emplacement du code des collections de la page d'accueil!</p>
             <p>Ouvrez la <strong>section</strong> appelée <code>collection.liquid</code> et trouvez l'emplacement du code qui affiche les produits.</p>
             <div class="delayed">
             <hr>
               <pre>
-                  <code>
+                  <code class="hljs html">
 &lt;div class="grid grid--uniform grid--view-items">
   {% for product in collection.products %}
     &lt;div class="grid__item {{ grid_item_width }}">
@@ -1361,12 +1382,12 @@ Capt. Vinay
         </section>
 
         <section class="slide">
-            <h2>Paramètres</h2>
+            <h1>Paramètres</h1>
 
             <p>Maintenant, nous mettrons nos produits sur différentes pages. Y a-t-il un <a alt="boucle « for », Shopify" href="https://docs.shopify.com/themes/liquid-documentation/tags/iteration-tags#for">paramètre de boucle « for »</a> qui pourrait nous aider?</p>
             <div class="delayed">
               <pre>
-                  <code>
+                  <code class="hljs html">
 &lt;div class="grid grid--uniform grid--view-items">
   {% for product in collection.products limit: 12 %}
     &lt;div class="grid__item {{ grid_item_width }}">
@@ -1384,7 +1405,7 @@ Capt. Vinay
         <section class="slide">
             <h2>Exercice n° 10 : Modifier un extrait de code</h2>
 
-            <h3>product-card-grid.liquid</h3>
+            <p><code>product-card-grid.liquid</code></p>
             <p>Comment personnaliser une annonce de produit? Vous avez quelques options :</p>
 
             <ul>
@@ -1398,36 +1419,37 @@ Capt. Vinay
                   Si le produit a une balise, comme <code>sustainable</code>, affichez-la après le prix. (<a href="https://help.shopify.com/themes/liquid/basics/operators#contains">indice</a>)
                 </li>
                 <li>
-                  Bonus : mettez l'image <code>icon-leaf.png</code> (dans les fichiers de l'atelier) avant la balise « sustainable » (<a href="https://help.shopify.com/themes/liquid/filters/url-filters#asset_url">indice</a>)
+                  Bonus : mettez l'image <code>icon-leaf.png</code> (dans les fichiers de l'atelier) avant la balise « sustainable ». (<a href="https://help.shopify.com/themes/liquid/filters/url-filters#asset_url">indice</a>)
                 </li>
             </ul>
 
-            <img src="framework/img/workshop/modified-snippet.png" class="center">
+            <img src="framework/img/workshop/modified-snippet.png" class="center" alt="Liste des produits avec le nom du fournisseur sous le titre du produit. Certains articles ont un prix. Certains comportent une icône de feuille avec une mention «Produit durable».">
 
         </section>
 
         <section class="slide centered">
-            <img src="framework/img/workshop/kitty-stump.gif">
-            <p>Un souci? Besoin d'un avis? Il suffit de consulter <a href="https://docs.shopify.com/themes/liquid-documentation/basics" alt="Documentation Liquid">documentation Liquid</a> ou de demander de l'aide à une mentore.</p>
+          <h1>Un souci?</h1>
+            <img src="framework/img/workshop/kitty-stump.gif" alt="">
+            <p>Besoin d'un avis? Il suffit de consulter <a href="https://docs.shopify.com/themes/liquid-documentation/basics">documentation Liquid</a> ou de demander de l'aide à une mentore.</p>
         </section>
 
         <section class="slide">
-            <h2>Exercice n° 10b : Modifier un extrait de code</h2>
-            <h3>Réponse : vendeur du produit (product vendor)</h3>
+            <h1>Exercice n° 10b : Modifier un extrait de code</h1>
+            <h2>Réponse : vendeur du produit (product vendor)</h2>
             <div class="delayed">
               <p>Voici les paramètres de thème qui déterminent la sortie du vendeur :</p>
-              <pre><code>
+              <pre><code class="hljs html">
 &lt;div class="grid-view-item__vendor">{{ product.vendor }}&lt;/div>
               </code></pre>
             </div>
         </section>
 
         <section class="slide">
-                <h2>Exercice n° 10 c : Modifier un extrait de code</h2>
-                <h3>Réponse : cacher le prix (hide price)</h3>
+                <h1>Exercice n° 10 c : Modifier un extrait de code</h1>
+                <h2>Réponse : cacher le prix (hide price)</h2>
                 <div class="delayed">
                   <p>Cachez toutes les informations sur le prix dans une expression <code>unless</code> (« à moins que ») qui vérifie le modèle de produit.</p>
-                <pre><code>
+                <pre><code class="hljs html">
     {% unless product.template_suffix == 'info-only' %}
       &lt;div class="grid-view-item__meta">
         {% include 'product-price' %}
@@ -1437,12 +1459,12 @@ Capt. Vinay
             </section>
 
         <section class="slide">
-            <h2>Exercice n° 10d : Modifier un extrait de code</h2>
-            <h3>Réponse : message « sustainable » (durable)</h3>
+            <h1>Exercice n° 10d : Modifier un extrait de code</h1>
+            <h2>Réponse : message « sustainable » (durable)</h2>
             <div class="delayed">
               <p>Utilisez <code>contains</code> pour vérifier si la liste de balises contient « durable ».</p>
 
-              <pre><code>
+              <pre><code class="hljs html">
 {% if product.tags contains 'sustainable' %}
   &lt;p&gt;Produit durable&lt;/p&gt;
 {% endif %}
@@ -1452,10 +1474,10 @@ Capt. Vinay
             <div class="delayed">
               <p>Téléversez <code>icon-leaf.png</code> dans le dossier « Assets » du thème et utilisez le filtre <code>asset_url</code> pour l'afficher.</p>
 
-              <pre><code>
+              <pre><code class="hljs html">
 {% if product.tags contains 'sustainable' %}
   &lt;p&gt;
-    &lt;img src="{{ 'icon-leaf.png' | asset_url }}" /&gt; Produit durable
+    &lt;img src="{{ 'icon-leaf.png' | asset_url }}" alt="" /&gt; Produit durable
   &lt;/p&gt;
 {% endif %}
               </code></pre>
@@ -1468,7 +1490,7 @@ Capt. Vinay
         </section>
 
         <section class="slide ">
-            <h2>Bogus Gateway</h2>
+            <h1>Bogus Gateway</h1>
 
             <p>Vous pouvez simuler une transaction sur votre boutique. Cela est utile si vous souhaitez :</p>
 
@@ -1491,14 +1513,14 @@ Capt. Vinay
         </section>
 
         <section class="slide ">
-            <h2>Exercice final : Magasinage</h2>
+            <h1>Exercice final : Magasinage</h1>
             <p>Simulez une transaction avec <a href="https://help.shopify.com/en/manual/checkout-settings/test-orders#place-a-test-order-by-simulating-a-transaction">Bogus Gateway</a> et achetez des produits de votre boutique.</p>
             <p><b>Au moment de passer à la caisse, saisissez ces informations :</b></p>
 
             <ul>
                 <li>Nom sur la carte : <code>Bogus Gateway</code></li>
-                <li>Numéro de carte de crédit : 1</li>
-                <li>Code de vérification : 111</li>
+                <li>Numéro de carte de crédit : <code>1</code></li>
+                <li>Code de vérification : <code>111</code></li>
                 <li>Date d'expiration : n'importe quelle date à venir</li>
             </ul>
             <br>
@@ -1507,8 +1529,8 @@ Capt. Vinay
         </section>
 
         <section class="slide">
+          <h1>Nous avons abordé BEAUCOUP de notions aujourd'hui!</h1>
             <div class="col col--one-half">
-                <h2>Nous avons abordé BEAUCOUP de notions aujourd'hui!</h2>
                 <ul>
                   <li>Compte pour partenaire Shopify</li>
                   <li>Téléverser des produits par fichier CSV</li>
@@ -1529,19 +1551,19 @@ Capt. Vinay
         </section>
 
         <section class="slide centered">
-          <h2>C'est fini!</h2>
-            <img src="framework/img/workshop/shopping.gif" alt="chien poussant un panier d'épicerie" class="w80">
+          <h1>C'est fini!</h1>
+            <img src="framework/img/workshop/shopping.gif" alt="Petit chien poussant un panier d'épicerie." class="w80">
         </section>
 
         <section class="slide">
-            <h2>Super! Maintenant, que faire?</h2>
+            <h1>Super! Maintenant, que faire?</h1>
             <ul>
               <li><b>Mettez vos connaissances en pratique</b> : personnalisez votre boutique Shopify en consultant la <a href="https://help.shopify.com/fr/manual/using-themes/change-the-layout/theme-code">liste de modifications possibles</a>.</li>
               <li>Expérimentez avec d'autres <a href="https://themes.shopify.com/designers/shopify">thèmes Shopify gratuits</a>.</li>
               <li>Découvrez comment <a href="https://help.shopify.com/fr/manual/using-themes/translate-theme">créer des balises de traduction</a> pour l'éditeur de langues.</li>
             </ul>
             <br>
-            <h3>Si vous souhaitez découvrir le programme pour partenaires :</h3>
+            <h2>Si vous souhaitez découvrir le programme pour partenaires :</h2>
             <ul>
               <li>Consultez les <a href="https://help.shopify.com/fr/partners/getting-started">étapes</a> pour commencer en tant que partenaire.</li>
               <li>Devenez un <a href="https://experts.shopify.com/setup-experts">spécialiste de configuration de boutique Shopify</a> après avoir créé 5 boutiques actives.</li>
@@ -1550,7 +1572,7 @@ Capt. Vinay
         </section>
 
         <section class="slide" data-markdown>
-            ##Ressources Shopify
+            #Ressources Shopify
 
             * [Documentation Shopify Liquid](https://help.shopify.com/themes/liquid/basics) : exemples et utilisations
 
@@ -1564,7 +1586,7 @@ Capt. Vinay
 
         <!-- Dernière diapositive -->
         <section class="slide last">
-            <h2>Merci!</h2>
+            <h1>Merci!</h1>
 
             <h2 class="heading-bg">
                 <span>Création d'une boutique avec Shopify</span><br>
@@ -1580,12 +1602,12 @@ Capt. Vinay
         </section>
 
         <section class="slide" data-markdown>
-            ##Bonus : créez un modèle de produit avec des onglets
+            #Bonus : créez un modèle de produit avec des onglets
 
             * Voici un [tutoriel](https://help.shopify.com/fr/manual/products/add-update-products) qui explique comment ajouter des onglets de produit à une page.
             * Toutefois, il n'explique pas comment créer un autre modèle. Les commerçants ne veulent pas toujours des onglets pour chaque produit.
 
-            ### Exercice
+            ## Exercice
             * Créez une page avec vos modalités de renvoi.
             * Écrivez un passage qui décrit vos tarifs d'expédition en code HTML.
             * Créez un nouveau modèle appelé product.tabs avec le tutoriel proposé.
@@ -1610,6 +1632,7 @@ Capt. Vinay
 
     <script src="framework/scripts/plugins/markdown/marked.js"></script>
     <script src="framework/scripts/plugins/markdown/markdown.js"></script>
+    <script src="framework/scripts/plugins/a11y/plugin.js"></script>
     <!-- <script src="framework/scripts/plugins/highlight/highlight.js"></script> -->
     <script src="framework/scripts/plugins/highlight/highlight-8.4.min.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
